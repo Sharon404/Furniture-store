@@ -130,6 +130,10 @@ const cursor = new Cursor();
 const titleHoverTargets = document.querySelectorAll('h1, h2, h3, .title-hover-target');
 
 titleHoverTargets.forEach((element) => {
+    const label = element.textContent.trim();
+    if (!label) return;
+
+    element.setAttribute('data-text', label);
     element.classList.add('title-hover-target');
 
     element.addEventListener('mousemove', (event) => {
@@ -139,10 +143,10 @@ titleHoverTargets.forEach((element) => {
     });
 
     element.addEventListener('mouseenter', () => {
-        cursor.setState('-text');
+        cursor.el.addClass('-hidden');
     });
 
     element.addEventListener('mouseleave', () => {
-        cursor.removeState('-text');
+        cursor.el.removeClass('-hidden');
     });
 });

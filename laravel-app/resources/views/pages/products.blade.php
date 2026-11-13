@@ -21,41 +21,116 @@
         </div>
     </div>
 
-    <section class="section-space">
+    <section class="section-space shop-page-section">
         <div class="container">
             <div class="row">
-                <div class="col-md-3">
-                    <div class="sidebar-box">
-                        <h3>Categories</h3>
-                        <ul>
-                            <li><a href="#">Living Room</a></li>
-                            <li><a href="#">Bedroom</a></li>
-                            <li><a href="#">Dining</a></li>
-                            <li><a href="#">Office</a></li>
-                        </ul>
+                <aside class="col-lg-3">
+                    <div class="shop-sidebar">
+                        <div class="sidebar-box">
+                            <h3>Categories</h3>
+                            <ul class="filter-list">
+                                <li><a href="#" class="active">Living Room</a></li>
+                                <li><a href="#">Bedroom</a></li>
+                                <li><a href="#">Dining</a></li>
+                                <li><a href="#">Office</a></li>
+                                <li><a href="#">Outdoor</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="sidebar-box">
+                            <h3>Fabric & Material</h3>
+                            <div class="filter-pills">
+                                <span class="pill active">Fabric</span>
+                                <span class="pill">Leather</span>
+                                <span class="pill">Bouclé</span>
+                                <span class="pill">Linen</span>
+                                <span class="pill">Velvet</span>
+                                <span class="pill">Oak</span>
+                            </div>
+                        </div>
+
+                        <div class="sidebar-box">
+                            <h3>Price Range</h3>
+                            <div class="price-range-box">
+                                <div class="range-track">
+                                    <span class="range-fill"></span>
+                                </div>
+                                <div class="price-values">
+                                    <span>KSh 5,000</span>
+                                    <span>KSh 50,000</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sidebar-box">
+                            <h3>Room Style</h3>
+                            <div class="filter-pills compact">
+                                <span class="pill active">Minimal</span>
+                                <span class="pill">Contemporary</span>
+                                <span class="pill">Classic</span>
+                                <span class="pill">Scandinavian</span>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-9">
-                    <div class="row">
-                        <div class="col-md-4">
+                </aside>
+
+                <div class="col-lg-9">
+                    <div class="shop-toolbar">
+                        <div>
+                            <p>Showing 12 curated pieces</p>
+                        </div>
+                        <div class="shop-sort">
+                            <label for="sort-by">Sort by</label>
+                            <select id="sort-by">
+                                <option>Featured</option>
+                                <option>Price: Low to High</option>
+                                <option>Price: High to Low</option>
+                                <option>Newest</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row g-4">
+                        <div class="col-md-6 col-xl-4">
                             <div class="product-card">
                                 <img src="{{ asset('images/product-1.jpg') }}" alt="Product">
                                 <h3>Classic Sofa</h3>
                                 <p>From @ksh(16800)</p>
                             </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-6 col-xl-4">
                             <div class="product-card">
                                 <img src="{{ asset('images/product-2.jpg') }}" alt="Product">
                                 <h3>Accent Chair</h3>
                                 <p>From @ksh(7200)</p>
                             </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-6 col-xl-4">
                             <div class="product-card">
                                 <img src="{{ asset('images/product-3.jpg') }}" alt="Product">
                                 <h3>Dining Set</h3>
                                 <p>From @ksh(24900)</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-4">
+                            <div class="product-card">
+                                <img src="{{ asset('images/product-1.jpg') }}" alt="Product">
+                                <h3>Tufted Accent</h3>
+                                <p>From @ksh(11200)</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-4">
+                            <div class="product-card">
+                                <img src="{{ asset('images/product-2.jpg') }}" alt="Product">
+                                <h3>Oak Console</h3>
+                                <p>From @ksh(18450)</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-4">
+                            <div class="product-card">
+                                <img src="{{ asset('images/product-3.jpg') }}" alt="Product">
+                                <h3>Statement Table</h3>
+                                <p>From @ksh(22350)</p>
                             </div>
                         </div>
                     </div>

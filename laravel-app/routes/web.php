@@ -12,6 +12,9 @@ Route::view('/order-received', 'pages.order-received')->name('order.received');
 Route::view('/contact', 'pages.contact')->name('contact');
 Route::view('/blog', 'pages.blog')->name('blog');
 Route::view('/blog-single', 'pages.blog-single')->name('blog-single');
+Route::view('/wishlist', 'pages.wishlist')->name('wishlist');
+Route::view('/profile', 'pages.profile')->name('profile');
+Route::view('/signup', 'pages.signup')->name('signup');
 
 Route::view('/login', 'pages.login')->name('login');
 Route::view('/forgot-password', 'pages.forgot-password')->name('forgot-password');
