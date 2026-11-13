@@ -1,0 +1,28 @@
+# Laravel / PHP
+laravel-app/vendor/
+laravel-app/node_modules/
+laravel-app/.env
+laravel-app/.env.*
+laravel-app/storage/*.key
+laravel-app/storage/app/private/
+laravel-app/storage/framework/cache/*
+laravel-app/storage/framework/sessions/*
+laravel-app/storage/framework/views/*
+laravel-app/storage/logs/*
+laravel-app/bootstrap/cache/*.php
+laravel-app/public/storage/
+laravel-app/public/hot
+laravel-app/.phpunit.result.cache
+laravel-app/.php-cs-fixer.cache
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.log
+
+# Local generated assets
+hts-cache/
+hts-log.txt
+*.bak
