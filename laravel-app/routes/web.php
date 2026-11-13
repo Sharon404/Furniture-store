@@ -3,63 +3,26 @@
 use Illuminate\Support\Facades\Route;
 
 Route::view('/', 'pages.home')->name('home');
-Route::view('/home', 'pages.home')->name('home');
-Route::view('/index.html', 'pages.home');
-
 Route::view('/about', 'pages.about')->name('about');
-Route::view('/about.html', 'pages.about');
 Route::view('/products', 'pages.products')->name('products');
-Route::view('/products.html', 'pages.products');
 Route::view('/product-single', 'pages.product-single')->name('product-single');
-Route::view('/product-single.html', 'pages.product-single');
 Route::view('/cart', 'pages.cart')->name('cart');
-Route::view('/cart.html', 'pages.cart');
 Route::view('/checkout', 'pages.checkout')->name('checkout');
-Route::view('/checkout.html', 'pages.checkout');
 Route::view('/order-received', 'pages.order-received')->name('order.received');
-Route::view('/order-received.html', 'pages.order-received');
 Route::view('/contact', 'pages.contact')->name('contact');
-Route::view('/contact.html', 'pages.contact');
-
 Route::view('/blog', 'pages.blog')->name('blog');
-Route::view('/blog.html', 'pages.blog');
 Route::view('/blog-single', 'pages.blog-single')->name('blog-single');
-Route::view('/blog-single.html', 'pages.blog-single');
-
-Route::view('/account/dashboard', 'pages.account-dashboard')->name('account.dashboard');
-Route::view('/account/dashboard.html', 'pages.account-dashboard');
-Route::view('/account/orders', 'pages.account-dashboard')->name('account.orders');
-Route::view('/account-order.html', 'pages.account-dashboard');
-Route::view('/account/orders-details', 'pages.account-dashboard');
-Route::view('/account-orders-details.html', 'pages.account-dashboard');
-Route::view('/account/wishlist', 'pages.account-wishlist')->name('account.wishlist');
-Route::view('/account-wishlist.html', 'pages.account-wishlist');
-Route::view('/account/details', 'pages.account-details')->name('account.details');
-Route::view('/account-details.html', 'pages.account-details');
-Route::view('/account/addresses', 'pages.account-dashboard')->name('account.addresses');
-Route::view('/account-addresses.html', 'pages.account-dashboard');
-Route::view('/account/downloads', 'pages.account-dashboard')->name('account.downloads');
-Route::view('/account-download.html', 'pages.account-dashboard');
 
 Route::view('/login', 'pages.login')->name('login');
-Route::view('/login.html', 'pages.login');
 Route::view('/forgot-password', 'pages.forgot-password')->name('forgot-password');
-Route::view('/forgot-password.html', 'pages.forgot-password');
 
 Route::view('/privacy-policy', 'pages.privacy-policy')->name('privacy-policy');
-Route::view('/privacy-policy.html', 'pages.privacy-policy');
 Route::view('/delivery-policy', 'pages.delivery-policy')->name('delivery-policy');
-Route::view('/delivery-policy.html', 'pages.delivery-policy');
 Route::view('/refund-return', 'pages.refund-return')->name('refund-return');
-Route::view('/refund-return.html', 'pages.refund-return');
 Route::view('/term-condition', 'pages.term-condition')->name('term-condition');
-Route::view('/term-condition.html', 'pages.term-condition');
 Route::view('/cancellation-policy', 'pages.cancellation-policy')->name('cancellation-policy');
-Route::view('/cancellation-policy.html', 'pages.cancellation-policy');
 Route::view('/testimonials', 'pages.testimonials')->name('testimonials');
-Route::view('/testimonials.html', 'pages.testimonials');
 Route::view('/faqs', 'pages.faqs')->name('faqs');
-Route::view('/faqs.html', 'pages.faqs');
 
 Route::view('/404', 'pages.404')->name('404');
 Route::fallback(fn () => view('pages.404'));
