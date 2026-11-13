@@ -1,4 +1,4 @@
-﻿@extends('layouts.storefront')
+@extends('layouts.storefront')
 
 @section('title', 'Shop | Livora')
 
@@ -39,21 +39,21 @@
                     <div class="row">
                         <div class="col-md-4">
                             <div class="product-card">
-                                <img src="{{ asset('html.awaikenthemes.com/livora/images/product-1.jpg') }}" alt="Product">
+                                <img src="{{ asset('images/product-1.jpg') }}" alt="Product">
                                 <h3>Classic Sofa</h3>
                                 <p>From @ksh(16800)</p>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="product-card">
-                                <img src="{{ asset('html.awaikenthemes.com/livora/images/product-2.jpg') }}" alt="Product">
+                                <img src="{{ asset('images/product-2.jpg') }}" alt="Product">
                                 <h3>Accent Chair</h3>
                                 <p>From @ksh(7200)</p>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="product-card">
-                                <img src="{{ asset('html.awaikenthemes.com/livora/images/product-3.jpg') }}" alt="Product">
+                                <img src="{{ asset('images/product-3.jpg') }}" alt="Product">
                                 <h3>Dining Set</h3>
                                 <p>From @ksh(24900)</p>
                             </div>

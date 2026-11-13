@@ -1,4 +1,4 @@
-﻿@extends('layouts.storefront')
+@extends('layouts.storefront')
 
 @section('title', 'Home | Livora')
 
@@ -17,7 +17,7 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="hero-image-box">
-                        <img src="{{ asset('html.awaikenthemes.com/livora/images/hero-image.png') }}" alt="Furniture collection">
+                        <img src="{{ asset('images/hero-image.png') }}" alt="Furniture collection">
                     </div>
                 </div>
             </div>
@@ -69,21 +69,21 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="product-card">
-                        <img src="{{ asset('html.awaikenthemes.com/livora/images/product-1.jpg') }}" alt="Sofa">
+                        <img src="{{ asset('images/product-1.jpg') }}" alt="Sofa">
                         <h3>Modern Sofa</h3>
                         <p>From @ksh(14500)</p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="product-card">
-                        <img src="{{ asset('html.awaikenthemes.com/livora/images/product-2.jpg') }}" alt="Dining chair">
+                        <img src="{{ asset('images/product-2.jpg') }}" alt="Dining chair">
                         <h3>Dining Chair</h3>
                         <p>From @ksh(6200)</p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="product-card">
-                        <img src="{{ asset('html.awaikenthemes.com/livora/images/product-3.jpg') }}" alt="Coffee table">
+                        <img src="{{ asset('images/product-3.jpg') }}" alt="Coffee table">
                         <h3>Coffee Table</h3>
                         <p>From @ksh(8900)</p>
                     </div>

@@ -1,4 +1,4 @@
-﻿@extends('layouts.storefront')
+@extends('layouts.storefront')
 
 @section('title', 'Product Details | Livora')
 
@@ -26,7 +26,7 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6">
-                    <img src="{{ asset('html.awaikenthemes.com/livora/images/product-1.jpg') }}" alt="Classic Sofa" class="img-fluid">
+                    <img src="{{ asset('images/product-1.jpg') }}" alt="Classic Sofa" class="img-fluid">
                 </div>
                 <div class="col-lg-6">
                     <h2 class="text-anime-style-3">Classic Sofa</h2>

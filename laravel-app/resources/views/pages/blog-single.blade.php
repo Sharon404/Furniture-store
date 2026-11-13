@@ -1,4 +1,4 @@
-﻿@extends('layouts.storefront')
+@extends('layouts.storefront')
 
 @section('title', 'Blog Single | Livora')
 
@@ -19,7 +19,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 mx-auto">
-                    <img src="{{ asset('html.awaikenthemes.com/livora/images/blog-image-1.jpg') }}" alt="Blog article" class="img-fluid mb-4">
+                    <img src="{{ asset('images/blog-image-1.jpg') }}" alt="Blog article" class="img-fluid mb-4">
                     <p>Furniture design is evolving to focus on multi-use spaces, natural textures, and comfort-driven features. Homeowners are choosing pieces that look good and work hard.</p>
                     <p>Neutral palettes, sculpted forms, and warm wood tones remain popular. Smart storage and compact silhouettes also continue to lead interior trends.</p>
                     <p>At Livora, we believe a beautiful room should still feel practical and welcoming.</p>

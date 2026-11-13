@@ -1,4 +1,4 @@
-﻿@extends('layouts.storefront')
+@extends('layouts.storefront')
 
 @section('title', 'About Us | Livora')
 
@@ -31,7 +31,7 @@
                     <p>From lounges to dining spaces, we help customers shape rooms they genuinely enjoy living in.</p>
                 </div>
                 <div class="col-lg-6">
-                    <img src="{{ asset('html.awaikenthemes.com/livora/images/about-image.jpg') }}" alt="About Livora" class="img-fluid rounded">
+                    <img src="{{ asset('images/about-image.jpg') }}" alt="About Livora" class="img-fluid rounded">
                 </div>
             </div>
         </div>

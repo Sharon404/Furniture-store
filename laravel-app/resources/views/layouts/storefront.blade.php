@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -6,23 +6,23 @@
     <meta name="description" content="Livora furniture store storefront">
     <title>@yield('title', 'Livora | Furniture Store')</title>
 
-    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('html.awaikenthemes.com/livora/images/favicon.png') }}">
-    <link href="{{ asset('html.awaikenthemes.com/livora/css/fonts.css') }}" rel="stylesheet" media="screen">
-    <link href="{{ asset('html.awaikenthemes.com/livora/css/bootstrap.min.css') }}" rel="stylesheet" media="screen">
-    <link href="{{ asset('html.awaikenthemes.com/livora/css/slicknav.min.css') }}" rel="stylesheet">
-    <link rel="stylesheet" href="{{ asset('html.awaikenthemes.com/livora/css/swiper-bundle.min.css') }}">
-    <link href="{{ asset('html.awaikenthemes.com/livora/css/all.min.css') }}" rel="stylesheet" media="screen">
-    <link href="{{ asset('html.awaikenthemes.com/livora/css/animate.css') }}" rel="stylesheet">
-    <link rel="stylesheet" href="{{ asset('html.awaikenthemes.com/livora/css/magnific-popup.css') }}">
-    <link rel="stylesheet" href="{{ asset('html.awaikenthemes.com/livora/css/mousecursor.css') }}">
-    <link href="{{ asset('html.awaikenthemes.com/livora/css/custom.css') }}" rel="stylesheet" media="screen">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('images/favicon.png') }}">
+    <link href="{{ asset('css/fonts.css') }}" rel="stylesheet" media="screen">
+    <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet" media="screen">
+    <link href="{{ asset('css/slicknav.min.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('css/swiper-bundle.min.css') }}">
+    <link href="{{ asset('css/animate.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('css/magnific-popup.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/mousecursor.css') }}">
+    <link href="{{ asset('css/custom.css') }}" rel="stylesheet" media="screen">
+    <link href="{{ asset('css/site-overrides.css') }}" rel="stylesheet" media="screen">
     @stack('styles')
 </head>
 <body>
     <div class="preloader">
         <div class="loading-container">
             <div class="loading"></div>
-            <div id="loading-icon"><img src="{{ asset('html.awaikenthemes.com/livora/images/loader.svg') }}" alt=""></div>
+            <div id="loading-icon"><img src="{{ asset('images/loader.svg') }}" alt=""></div>
         </div>
     </div>
 
@@ -34,23 +34,23 @@
 
     @include('partials.storefront-footer')
 
-    <script src="{{ asset('html.awaikenthemes.com/livora/js/jquery.min.js') }}"></script>
-    <script src="{{ asset('html.awaikenthemes.com/livora/js/bootstrap.min.js') }}"></script>
-    <script src="{{ asset('html.awaikenthemes.com/livora/js/validator.min.js') }}"></script>
-    <script src="{{ asset('html.awaikenthemes.com/livora/js/jquery.slicknav.js') }}"></script>
-    <script src="{{ asset('html.awaikenthemes.com/livora/js/jquery.min.js') }}"></script>
-    <script src="{{ asset('html.awaikenthemes.com/livora/js/gsap.min.js') }}"></script>
-    <script src="{{ asset('html.awaikenthemes.com/livora/js/ScrollTrigger.min.js') }}"></script>
-    <script src="{{ asset('html.awaikenthemes.com/livora/js/SplitText.min.js') }}"></script>
-    <script src="{{ asset('html.awaikenthemes.com/livora/js/lenis.min.js') }}"></script>
-    <script src="{{ asset('html.awaikenthemes.com/livora/js/wow.min.js') }}"></script>
-    <script src="{{ asset('html.awaikenthemes.com/livora/js/swiper-bundle.min.js') }}"></script>
-    <script src="{{ asset('html.awaikenthemes.com/livora/js/jquery.waypoints.min.js') }}"></script>
-    <script src="{{ asset('html.awaikenthemes.com/livora/js/counter.min.js') }}"></script>
-    <script src="{{ asset('html.awaikenthemes.com/livora/js/parallaxie.js') }}"></script>
-    <script src="{{ asset('html.awaikenthemes.com/livora/js/jquery.magnific-popup.min.js') }}"></script>
-    <script src="{{ asset('html.awaikenthemes.com/livora/js/function.js') }}"></script>
-    <script src="{{ asset('html.awaikenthemes.com/livora/js/magiccursor.js') }}"></script>
+    <script src="{{ asset('js/jquery.min.js') }}"></script>
+    <script src="{{ asset('js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('js/validator.min.js') }}"></script>
+    <script src="{{ asset('js/jquery.slicknav.js') }}"></script>
+    <script src="{{ asset('js/jquery.min.js') }}"></script>
+    <script src="{{ asset('js/gsap.min.js') }}"></script>
+    <script src="{{ asset('js/ScrollTrigger.min.js') }}"></script>
+    <script src="{{ asset('js/SplitText.min.js') }}"></script>
+    <script src="{{ asset('js/lenis.min.js') }}"></script>
+    <script src="{{ asset('js/wow.min.js') }}"></script>
+    <script src="{{ asset('js/swiper-bundle.min.js') }}"></script>
+    <script src="{{ asset('js/jquery.waypoints.min.js') }}"></script>
+    <script src="{{ asset('js/counter.min.js') }}"></script>
+    <script src="{{ asset('js/parallaxie.js') }}"></script>
+    <script src="{{ asset('js/jquery.magnific-popup.min.js') }}"></script>
+    <script src="{{ asset('js/function.js') }}"></script>
+    <script src="{{ asset('js/magiccursor.js') }}"></script>
     @stack('scripts')
 </body>
 </html>

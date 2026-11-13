@@ -1,0 +1,268 @@
+/*
+ * Site-specific overrides for the Livora storefront.
+ * Keep the original downloaded theme files untouched and place
+ * custom changes here instead.
+ */
+
+:root {
+    --brand-primary: #b77b3b;
+    --brand-primary-dark: #7d4e1f;
+    --brand-dark: #171717;
+    --brand-soft: #f8f4ee;
+    --brand-muted: #6a6a6a;
+    --brand-line: rgba(23, 23, 23, 0.08);
+    --shadow-soft: 0 18px 40px rgba(27, 27, 27, 0.08);
+}
+
+body {
+    background: #ffffff;
+    color: var(--brand-dark);
+    font-family: "Segoe UI", Arial, sans-serif;
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+main {
+    background: #fff;
+}
+
+.section-space {
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.light-section {
+    background: var(--brand-soft);
+}
+
+.dark-section {
+    background: linear-gradient(135deg, #f7f1ea 0%, #f0e7db 45%, #fff 100%);
+}
+
+.hero-section {
+    position: relative;
+    padding-top: 110px;
+    padding-bottom: 100px;
+}
+
+.hero-section .row {
+    align-items: center;
+}
+
+.section-sub-title {
+    display: inline-block;
+    margin-bottom: 20px;
+    font-size: 13px;
+    line-height: 1;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--brand-primary-dark);
+}
+
+.hero-section h1,
+.hero-section h2,
+.hero-section h3,
+.section-space h2,
+.section-space h3 {
+    letter-spacing: -0.04em;
+}
+
+.hero-section h1 {
+    max-width: 540px;
+    margin-bottom: 18px;
+    font-size: clamp(2.6rem, 5vw, 5rem);
+    line-height: 0.95;
+    color: var(--brand-dark);
+}
+
+.hero-section p {
+    max-width: 560px;
+    font-size: 1.08rem;
+    color: var(--brand-muted);
+    margin-bottom: 28px;
+}
+
+.hero-image-box {
+    position: relative;
+    border-radius: 32px;
+    overflow: hidden;
+    box-shadow: var(--shadow-soft);
+    background: linear-gradient(135deg, #efe4d2, #faf6f1);
+}
+
+.hero-image-box img {
+    width: 100%;
+    height: 660px;
+    object-fit: cover;
+    border-radius: 32px;
+}
+
+.btn-default,
+.btn-border {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 52px;
+    padding: 0 28px;
+    border-radius: 999px;
+    font-size: 0.97rem;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    transition: all 0.25s ease;
+}
+
+.btn-default {
+    background: var(--brand-primary);
+    color: #fff;
+    border: 1px solid var(--brand-primary);
+    box-shadow: 0 8px 25px rgba(183, 123, 59, 0.2);
+}
+
+.btn-default:hover {
+    background: var(--brand-primary-dark);
+    color: #fff;
+    transform: translateY(-1px);
+}
+
+.btn-border {
+    background: transparent;
+    color: var(--brand-dark);
+    border: 1px solid rgba(23, 23, 23, 0.18);
+}
+
+.btn-border:hover {
+    background: var(--brand-dark);
+    color: #fff;
+}
+
+.feature-box {
+    height: 100%;
+    padding: 32px 24px 22px;
+    background: #fff;
+    border-radius: 24px;
+    border: 1px solid var(--brand-line);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.02);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.feature-box:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 18px 34px rgba(0, 0, 0, 0.04);
+}
+
+.feature-box h3 {
+    margin-bottom: 12px;
+    font-size: 1.5rem;
+    color: var(--brand-dark);
+}
+
+.feature-box p {
+    margin: 0;
+    color: var(--brand-muted);
+    font-size: 1rem;
+}
+
+.section-space h2 {
+    font-size: clamp(2.1rem, 3vw, 3rem);
+    line-height: 1.08;
+    color: var(--brand-dark);
+}
+
+.product-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 18px;
+    background: #fff;
+    border: 1px solid var(--brand-line);
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.03);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 18px 32px rgba(0, 0, 0, 0.06);
+}
+
+.product-card img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 18px;
+    margin-bottom: 18px;
+}
+
+.product-card h3 {
+    margin-bottom: 8px;
+    font-size: 1.45rem;
+    color: var(--brand-dark);
+}
+
+.product-card p {
+    margin: 0;
+    color: var(--brand-primary-dark);
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.footer-social li a,
+.footer-widget a {
+    transition: color 0.2s ease, opacity 0.2s ease;
+}
+
+@media (max-width: 991.98px) {
+    .hero-section {
+        padding-top: 80px;
+        padding-bottom: 70px;
+    }
+
+    .hero-image-box img {
+        height: 440px;
+    }
+
+    .product-card img {
+        height: 280px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .section-space {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+
+    .hero-section h1 {
+        max-width: 100%;
+    }
+
+    .hero-section p {
+        font-size: 1rem;
+    }
+
+    .hero-image-box {
+        margin-top: 25px;
+    }
+
+    .product-card {
+        margin-bottom: 20px;
+    }
+}
+
+/* Keep typography consistent on the storefront */
+body,
+button,
+input,
+textarea,
+select {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}

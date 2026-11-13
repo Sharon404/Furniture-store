@@ -31,51 +31,11 @@
 		});
 	}	
 	
-	/* Responsive Mobile Menu */
-	var $mobileNavToggle = $('.mobile-nav-toggle');
-	var $mobileNavWrapper = $('.main-menu .nav-menu-wrapper');
-	var $responsiveMenu = $('.responsive-menu');
-
-	$responsiveMenu.each(function () {
-		var $menu = $(this);
-		if (!$menu.find('.mobile-nav-list').length && $('#menu').length) {
-			var $mobileList = $('#menu').clone(true, true);
-			$mobileList.removeAttr('id').addClass('mobile-nav-list');
-			$menu.append($mobileList);
-		}
-		if (!$menu.find('.mobile-nav-list').length) {
-			var fallbackItems = [
-				{ href: '/', text: 'Home' },
-				{ href: '/products', text: 'Shop' },
-				{ href: '/about', text: 'About Us' },
-				{ href: '/contact', text: 'Contact Us' }
-			];
-			var $fallbackList = $('<ul class="mobile-nav-list"></ul>');
-			$.each(fallbackItems, function (_, item) {
-				$('<li></li>').append($('<a></a>', { href: item.href, text: item.text })).appendTo($fallbackList);
-			});
-			$menu.append($fallbackList);
-		}
+	/* Slick Menu JS */
+	$('#menu').slicknav({
+		label : '',
+		prependTo : '.responsive-menu'
 	});
-
-	if ($mobileNavToggle.length && $mobileNavWrapper.length) {
-		$mobileNavToggle.on('click', function (e) {
-			e.preventDefault();
-			var isOpen = $(this).hasClass('is-open');
-			$(this).toggleClass('is-open', !isOpen);
-			$(this).attr('aria-expanded', String(!isOpen));
-			$mobileNavWrapper.toggleClass('is-open', !isOpen);
-			$responsiveMenu.toggleClass('is-open', !isOpen);
-		});
-
-		$(document).on('click', function (event) {
-			if ($(window).width() <= 1024 && !$(event.target).closest('.mobile-nav-toggle, .main-menu .nav-menu-wrapper, .responsive-menu').length) {
-				$mobileNavToggle.removeClass('is-open').attr('aria-expanded', 'false');
-				$mobileNavWrapper.removeClass('is-open');
-				$responsiveMenu.removeClass('is-open');
-			}
-		});
-	}
 
 	if($("a[href='#top']").length){
 		$(document).on("click", "a[href='#top']", function() {
