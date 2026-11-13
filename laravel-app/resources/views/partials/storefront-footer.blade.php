@@ -34,8 +34,8 @@
                     <div class="footer-widget">
                         <h3>Contact</h3>
                         <ul>
-                            <li>123 Furniture Lane</li>
-                            <li><a href="tel:+123456789">+123 456 789</a></li>
+                            <li>Nairobi, Kenya</li>
+                            <li><a href="tel:+254712345678">+254 712 345 678</a></li>
                             <li><a href="mailto:hello@livora.com">hello@livora.com</a></li>
                         </ul>
                     </div>

@@ -10,7 +10,7 @@ if (! function_exists('format_currency')) {
             $amount = 0;
         }
 
-        $amount = (float) $amount;
+        $amount = (float) $amount * 10;
 
         return sprintf('%s %s', $currency, number_format($amount, $decimals, '.', ','));
     }

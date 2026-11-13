@@ -247,7 +247,7 @@
                                         </div>
                                         <div class="contact-info-item-content">
                                             <h3>Address:</h3>
-                                            <p>245 Modern Avenue, Manhattan, New York, USA - 00258</p>
+                                            <p>Nairobi, Kenya</p>
                                         </div>
                                     </div>
                                     <!-- Contact Info Item End -->
@@ -259,7 +259,7 @@
                                         </div>
                                         <div class="contact-info-item-content">
                                             <h3>Contact No.:</h3>
-                                            <p><a href="tel:123456789">+91 123 456 789</a></p>
+                                            <p><a href="tel:+254712345678">+254 712 345 678</a></p>
                                         </div>
                                     </div>
                                     <!-- Contact Info Item End -->

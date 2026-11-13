@@ -21,7 +21,7 @@
                         </div>
                         <div class="header-contact-info-content">
                             <p>Need Help ?</p>
-                            <span><a href="tel:123456789">+123 456 789</a></span>
+                            <span><a href="tel:+254712345678">+254 712 345 678</a></span>
                         </div>
                     </div>
                 </div>
