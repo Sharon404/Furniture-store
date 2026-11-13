@@ -15,7 +15,7 @@
         </div>
     </div>
 
-    <section class="section-space">
+    <section class="section-space cart-page-section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8">

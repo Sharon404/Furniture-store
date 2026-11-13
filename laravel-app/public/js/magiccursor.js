@@ -126,3 +126,23 @@ class Cursor {
 }
 // Init cursor
 const cursor = new Cursor();
+
+const titleHoverTargets = document.querySelectorAll('h1, h2, h3, .title-hover-target');
+
+titleHoverTargets.forEach((element) => {
+    element.classList.add('title-hover-target');
+
+    element.addEventListener('mousemove', (event) => {
+        const rect = element.getBoundingClientRect();
+        element.style.setProperty('--cursor-x', `${event.clientX - rect.left}px`);
+        element.style.setProperty('--cursor-y', `${event.clientY - rect.top}px`);
+    });
+
+    element.addEventListener('mouseenter', () => {
+        cursor.setState('-text');
+    });
+
+    element.addEventListener('mouseleave', () => {
+        cursor.removeState('-text');
+    });
+});
