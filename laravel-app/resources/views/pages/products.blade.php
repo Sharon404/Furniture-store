@@ -92,46 +92,58 @@
 
                     <div class="row g-4">
                         <div class="col-md-6 col-xl-4">
-                            <div class="product-card">
-                                <img src="{{ asset('images/product-1.jpg') }}" alt="Product">
-                                <h3>Classic Sofa</h3>
-                                <p>From @ksh(16800)</p>
-                            </div>
+                            <a href="{{ route('product-single') }}" class="product-card-link">
+                                <div class="product-card">
+                                    <img src="{{ asset('images/product-1.jpg') }}" alt="Product">
+                                    <h3>Classic Sofa</h3>
+                                    <p>From @ksh(16800)</p>
+                                </div>
+                            </a>
                         </div>
                         <div class="col-md-6 col-xl-4">
-                            <div class="product-card">
-                                <img src="{{ asset('images/product-2.jpg') }}" alt="Product">
-                                <h3>Accent Chair</h3>
-                                <p>From @ksh(7200)</p>
-                            </div>
+                            <a href="{{ route('product-single') }}" class="product-card-link">
+                                <div class="product-card">
+                                    <img src="{{ asset('images/product-2.jpg') }}" alt="Product">
+                                    <h3>Accent Chair</h3>
+                                    <p>From @ksh(7200)</p>
+                                </div>
+                            </a>
                         </div>
                         <div class="col-md-6 col-xl-4">
-                            <div class="product-card">
-                                <img src="{{ asset('images/product-3.jpg') }}" alt="Product">
-                                <h3>Dining Set</h3>
-                                <p>From @ksh(24900)</p>
-                            </div>
+                            <a href="{{ route('product-single') }}" class="product-card-link">
+                                <div class="product-card">
+                                    <img src="{{ asset('images/product-3.jpg') }}" alt="Product">
+                                    <h3>Dining Set</h3>
+                                    <p>From @ksh(24900)</p>
+                                </div>
+                            </a>
                         </div>
                         <div class="col-md-6 col-xl-4">
-                            <div class="product-card">
-                                <img src="{{ asset('images/product-1.jpg') }}" alt="Product">
-                                <h3>Tufted Accent</h3>
-                                <p>From @ksh(11200)</p>
-                            </div>
+                            <a href="{{ route('product-single') }}" class="product-card-link">
+                                <div class="product-card">
+                                    <img src="{{ asset('images/product-1.jpg') }}" alt="Product">
+                                    <h3>Tufted Accent</h3>
+                                    <p>From @ksh(11200)</p>
+                                </div>
+                            </a>
                         </div>
                         <div class="col-md-6 col-xl-4">
-                            <div class="product-card">
-                                <img src="{{ asset('images/product-2.jpg') }}" alt="Product">
-                                <h3>Oak Console</h3>
-                                <p>From @ksh(18450)</p>
-                            </div>
+                            <a href="{{ route('product-single') }}" class="product-card-link">
+                                <div class="product-card">
+                                    <img src="{{ asset('images/product-2.jpg') }}" alt="Product">
+                                    <h3>Oak Console</h3>
+                                    <p>From @ksh(18450)</p>
+                                </div>
+                            </a>
                         </div>
                         <div class="col-md-6 col-xl-4">
-                            <div class="product-card">
-                                <img src="{{ asset('images/product-3.jpg') }}" alt="Product">
-                                <h3>Statement Table</h3>
-                                <p>From @ksh(22350)</p>
-                            </div>
+                            <a href="{{ route('product-single') }}" class="product-card-link">
+                                <div class="product-card">
+                                    <img src="{{ asset('images/product-3.jpg') }}" alt="Product">
+                                    <h3>Statement Table</h3>
+                                    <p>From @ksh(22350)</p>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>

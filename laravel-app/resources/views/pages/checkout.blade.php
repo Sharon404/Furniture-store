@@ -68,7 +68,7 @@
                             <span>@ksh(2000)</span>
                         </div>
                         <h4>Total: @ksh(20300)</h4>
-                        <button type="submit" class="btn-default w-100">Place order</button>
+                        <a href="{{ route('order.received') }}" class="btn-default btn-large w-100 d-inline-flex text-center">Place order</a>
                     </div>
                 </div>
             </div>
