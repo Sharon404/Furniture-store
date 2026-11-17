@@ -37,6 +37,10 @@ img {
     box-shadow: 0 10px 30px rgba(20, 20, 20, 0.03);
 }
 
+.breadcrumb {
+    --bs-breadcrumb-divider: "/";
+}
+
 .header-sticky nav {
     min-height: 88px;
 }
@@ -144,6 +148,19 @@ main {
 
 .dark-section {
     background: linear-gradient(135deg, #f7f1ea 0%, #f0e7db 45%, #fff 100%);
+}
+
+.page-header.dark-section {
+    position: relative;
+    background-image: linear-gradient(rgba(20, 20, 20, 0.48), rgba(20, 20, 20, 0.48)), url('../images/page-header-bg-image.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.page-header.dark-section::before {
+    background: rgba(20, 20, 20, 0.45);
+    opacity: 1;
 }
 
 .hero-section {
@@ -901,6 +918,12 @@ main {
 }
 
 .intro-video-bg-video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.intro-video-bg-video img {
     width: 100%;
     height: 100%;
     object-fit: cover;

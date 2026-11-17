@@ -176,21 +176,21 @@
             </div>
             <div class="row">
                 <div class="col-md-4">
-                    <a href="{{ route('product-single') }}" class="product-card" data-cursor-text="View">
+                    <a href="{{ route('product.show', ['slug' => 'round-oak-table']) }}" class="product-card" data-cursor-text="View">
                         <img src="{{ asset('images/product-1.jpg') }}" alt="Round oak table">
                         <h3>Round Oak Table</h3>
                         <p>From @ksh(14500)</p>
                     </a>
                 </div>
                 <div class="col-md-4">
-                    <a href="{{ route('product-single') }}" class="product-card" data-cursor-text="View">
+                    <a href="{{ route('product.show', ['slug' => 'tufted-cream-sofa']) }}" class="product-card" data-cursor-text="View">
                         <img src="{{ asset('images/product-2.jpg') }}" alt="Tufted cream sofa">
                         <h3>Tufted Cream Sofa</h3>
                         <p>From @ksh(6200)</p>
                     </a>
                 </div>
                 <div class="col-md-4">
-                    <a href="{{ route('product-single') }}" class="product-card" data-cursor-text="View">
+                    <a href="{{ route('product.show', ['slug' => 'classic-accent-chair']) }}" class="product-card" data-cursor-text="View">
                         <img src="{{ asset('images/product-3.jpg') }}" alt="Classic accent chair">
                         <h3>Classic Accent Chair</h3>
                         <p>From @ksh(8900)</p>
@@ -202,9 +202,7 @@
 
     <section class="intro-video dark-section">
         <div class="intro-video-bg-video">
-            <video autoplay muted loop playsinline>
-                <source src="https://demo.awaikenthemes.com/assets/videos/livora-our-story-1-video.mp4" type="video/mp4">
-            </video>
+            <img src="{{ asset('images/hero-bg-image.jpg') }}" alt="Luxury interior background">
         </div>
 
         <div class="container">
@@ -241,36 +239,36 @@
             <div class="trending-product-item-boxes">
                 <article class="trending-product-item">
                     <div class="trending-product-item-image">
-                        <a href="{{ route('product-single') }}" data-cursor-text="View">
+                        <a href="{{ route('product.show', ['slug' => 'round-oak-table']) }}" data-cursor-text="View">
                             <img src="{{ asset('images/trending-product-image-1.jpg') }}" alt="Minimal lounge set">
                         </a>
                     </div>
                     <div class="trending-product-item-content">
-                        <h3><a href="{{ route('product-single') }}">Cloud Lounge</a></h3>
+                        <h3><a href="{{ route('product.show', ['slug' => 'round-oak-table']) }}">Cloud Lounge</a></h3>
                         <p><b>KES 48,000</b></p>
                     </div>
                 </article>
 
                 <article class="trending-product-item">
                     <div class="trending-product-item-image">
-                        <a href="{{ route('product-single') }}" data-cursor-text="View">
+                        <a href="{{ route('product.show', ['slug' => 'tufted-cream-sofa']) }}" data-cursor-text="View">
                             <img src="{{ asset('images/trending-product-image-2.jpg') }}" alt="Oak dining table">
                         </a>
                     </div>
                     <div class="trending-product-item-content">
-                        <h3><a href="{{ route('product-single') }}">Oak Dining</a></h3>
+                        <h3><a href="{{ route('product.show', ['slug' => 'tufted-cream-sofa']) }}">Oak Dining</a></h3>
                         <p><b>KES 62,500</b></p>
                     </div>
                 </article>
 
                 <article class="trending-product-item">
                     <div class="trending-product-item-image">
-                        <a href="{{ route('product-single') }}" data-cursor-text="View">
+                        <a href="{{ route('product.show', ['slug' => 'classic-accent-chair']) }}" data-cursor-text="View">
                             <img src="{{ asset('images/trending-product-image-3.jpg') }}" alt="Accent cabinet">
                         </a>
                     </div>
                     <div class="trending-product-item-content">
-                        <h3><a href="{{ route('product-single') }}">Accent Cabinet</a></h3>
+                        <h3><a href="{{ route('product.show', ['slug' => 'classic-accent-chair']) }}">Accent Cabinet</a></h3>
                         <p><b>KES 31,000</b></p>
                     </div>
                 </article>

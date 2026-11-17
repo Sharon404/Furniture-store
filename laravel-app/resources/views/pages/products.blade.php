@@ -11,7 +11,7 @@
                         <h1>Shop</h1>
                         <nav>
                             <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="{{ route('home') }}">Home</a></li>
+                                <li class="breadcrumb-item">Home</li>
                                 <li class="breadcrumb-item active" aria-current="page">Shop</li>
                             </ol>
                         </nav>
@@ -92,7 +92,7 @@
 
                     <div class="row g-4">
                         <div class="col-md-6 col-xl-4">
-                            <a href="{{ route('product-single') }}" class="product-card-link">
+                            <a href="{{ route('product.show', ['slug' => 'round-oak-table']) }}" class="product-card-link">
                                 <div class="product-card">
                                     <img src="{{ asset('images/product-1.jpg') }}" alt="Round oak table">
                                     <h3>Round Oak Table</h3>
@@ -101,7 +101,7 @@
                             </a>
                         </div>
                         <div class="col-md-6 col-xl-4">
-                            <a href="{{ route('product-single') }}" class="product-card-link">
+                            <a href="{{ route('product.show', ['slug' => 'tufted-cream-sofa']) }}" class="product-card-link">
                                 <div class="product-card">
                                     <img src="{{ asset('images/product-2.jpg') }}" alt="Tufted cream sofa">
                                     <h3>Tufted Cream Sofa</h3>
@@ -110,7 +110,7 @@
                             </a>
                         </div>
                         <div class="col-md-6 col-xl-4">
-                            <a href="{{ route('product-single') }}" class="product-card-link">
+                            <a href="{{ route('product.show', ['slug' => 'classic-accent-chair']) }}" class="product-card-link">
                                 <div class="product-card">
                                     <img src="{{ asset('images/product-3.jpg') }}" alt="Classic accent chair">
                                     <h3>Classic Accent Chair</h3>
@@ -119,7 +119,7 @@
                             </a>
                         </div>
                         <div class="col-md-6 col-xl-4">
-                            <a href="{{ route('product-single') }}" class="product-card-link">
+                            <a href="{{ route('product.show', ['slug' => 'walnut-side-table']) }}" class="product-card-link">
                                 <div class="product-card">
                                     <img src="{{ asset('images/product-1.jpg') }}" alt="Walnut side table">
                                     <h3>Walnut Side Table</h3>
@@ -128,7 +128,7 @@
                             </a>
                         </div>
                         <div class="col-md-6 col-xl-4">
-                            <a href="{{ route('product-single') }}" class="product-card-link">
+                            <a href="{{ route('product.show', ['slug' => 'modern-2-seater-sofa']) }}" class="product-card-link">
                                 <div class="product-card">
                                     <img src="{{ asset('images/product-2.jpg') }}" alt="Modern two-seater sofa">
                                     <h3>Modern 2-Seater Sofa</h3>
@@ -137,7 +137,7 @@
                             </a>
                         </div>
                         <div class="col-md-6 col-xl-4">
-                            <a href="{{ route('product-single') }}" class="product-card-link">
+                            <a href="{{ route('product.show', ['slug' => 'vintage-lounge-chair']) }}" class="product-card-link">
                                 <div class="product-card">
                                     <img src="{{ asset('images/product-3.jpg') }}" alt="Vintage lounge chair">
                                     <h3>Vintage Lounge Chair</h3>
