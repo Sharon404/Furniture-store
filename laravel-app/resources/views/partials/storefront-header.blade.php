@@ -17,7 +17,7 @@
                     </div>
 
                     <div class="utility-actions" aria-label="Quick actions">
-                        <a href="#" class="utility-action" aria-label="Search">
+                        <a href="{{ route('products') }}" class="utility-action" aria-label="Browse products">
                             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10.5 3a7.5 7.5 0 015.88 12.8l4.4 4.4 1.4-1.4-4.4-4.4A7.5 7.5 0 1110.5 3zm0 2a5.5 5.5 0 100 11 5.5 5.5 0 000-11z"/></svg>
                         </a>
                         <a href="{{ route('wishlist') }}" class="utility-action" aria-label="Wishlist">

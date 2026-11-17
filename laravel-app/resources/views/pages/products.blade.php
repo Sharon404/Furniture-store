@@ -94,8 +94,8 @@
                         <div class="col-md-6 col-xl-4">
                             <a href="{{ route('product-single') }}" class="product-card-link">
                                 <div class="product-card">
-                                    <img src="{{ asset('images/product-1.jpg') }}" alt="Product">
-                                    <h3>Classic Sofa</h3>
+                                    <img src="{{ asset('images/product-1.jpg') }}" alt="Round oak table">
+                                    <h3>Round Oak Table</h3>
                                     <p>From @ksh(16800)</p>
                                 </div>
                             </a>
@@ -103,8 +103,8 @@
                         <div class="col-md-6 col-xl-4">
                             <a href="{{ route('product-single') }}" class="product-card-link">
                                 <div class="product-card">
-                                    <img src="{{ asset('images/product-2.jpg') }}" alt="Product">
-                                    <h3>Accent Chair</h3>
+                                    <img src="{{ asset('images/product-2.jpg') }}" alt="Tufted cream sofa">
+                                    <h3>Tufted Cream Sofa</h3>
                                     <p>From @ksh(7200)</p>
                                 </div>
                             </a>
@@ -112,8 +112,8 @@
                         <div class="col-md-6 col-xl-4">
                             <a href="{{ route('product-single') }}" class="product-card-link">
                                 <div class="product-card">
-                                    <img src="{{ asset('images/product-3.jpg') }}" alt="Product">
-                                    <h3>Dining Set</h3>
+                                    <img src="{{ asset('images/product-3.jpg') }}" alt="Classic accent chair">
+                                    <h3>Classic Accent Chair</h3>
                                     <p>From @ksh(24900)</p>
                                 </div>
                             </a>
@@ -121,8 +121,8 @@
                         <div class="col-md-6 col-xl-4">
                             <a href="{{ route('product-single') }}" class="product-card-link">
                                 <div class="product-card">
-                                    <img src="{{ asset('images/product-1.jpg') }}" alt="Product">
-                                    <h3>Tufted Accent</h3>
+                                    <img src="{{ asset('images/product-1.jpg') }}" alt="Walnut side table">
+                                    <h3>Walnut Side Table</h3>
                                     <p>From @ksh(11200)</p>
                                 </div>
                             </a>
@@ -130,8 +130,8 @@
                         <div class="col-md-6 col-xl-4">
                             <a href="{{ route('product-single') }}" class="product-card-link">
                                 <div class="product-card">
-                                    <img src="{{ asset('images/product-2.jpg') }}" alt="Product">
-                                    <h3>Oak Console</h3>
+                                    <img src="{{ asset('images/product-2.jpg') }}" alt="Modern two-seater sofa">
+                                    <h3>Modern 2-Seater Sofa</h3>
                                     <p>From @ksh(18450)</p>
                                 </div>
                             </a>
@@ -139,8 +139,8 @@
                         <div class="col-md-6 col-xl-4">
                             <a href="{{ route('product-single') }}" class="product-card-link">
                                 <div class="product-card">
-                                    <img src="{{ asset('images/product-3.jpg') }}" alt="Product">
-                                    <h3>Statement Table</h3>
+                                    <img src="{{ asset('images/product-3.jpg') }}" alt="Vintage lounge chair">
+                                    <h3>Vintage Lounge Chair</h3>
                                     <p>From @ksh(22350)</p>
                                 </div>
                             </a>

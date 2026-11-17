@@ -8,12 +8,12 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="page-header-box">
-                        <h1>Classic Sofa</h1>
+                        <h1>Round Oak Table</h1>
                         <nav>
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item"><a href="{{ route('home') }}">Home</a></li>
                                 <li class="breadcrumb-item"><a href="{{ route('products') }}">Shop</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">Classic Sofa</li>
+                                <li class="breadcrumb-item active" aria-current="page">Round Oak Table</li>
                             </ol>
                         </nav>
                     </div>
@@ -27,36 +27,36 @@
             <div class="row g-5 align-items-center">
                 <div class="col-lg-6">
                     <div class="product-gallery">
-                        <img src="{{ asset('images/product-1.jpg') }}" alt="Classic Sofa" class="img-fluid main-product-image">
+                        <img src="{{ asset('images/product-1.jpg') }}" alt="Round Oak Table" class="img-fluid main-product-image">
                     </div>
                 </div>
 
                 <div class="col-lg-6">
                     <div class="product-info-box">
                         <span class="section-sub-title">Handcrafted furniture</span>
-                        <h2>Classic Sofa</h2>
+                        <h2>Round Oak Table</h2>
                         <div class="product-rating">
                             <span>★★★★★</span>
                             <small>4.9 (128 reviews)</small>
                         </div>
                         <div class="product-price">@ksh(16800)</div>
-                        <p class="product-description">A timeless sofa designed for comfort, durability, and a refined living room look. Crafted with premium fabrics and a sculpted silhouette for elevated everyday living.</p>
+                        <p class="product-description">A handcrafted round oak table designed for modern homes. Its compact footprint and natural finish make it perfect for dining nooks, coffee corners, and layered living spaces.</p>
 
                         <div class="product-options">
                             <div class="option-group">
-                                <label>Fabric</label>
+                                <label>Material</label>
                                 <div class="option-pills">
-                                    <span class="pill active">Linen</span>
-                                    <span class="pill">Velvet</span>
-                                    <span class="pill">Bouclé</span>
+                                    <span class="pill active">Solid Oak</span>
+                                    <span class="pill">Walnut Veneer</span>
+                                    <span class="pill">Ash Wood</span>
                                 </div>
                             </div>
                             <div class="option-group">
-                                <label>Color</label>
+                                <label>Finish</label>
                                 <div class="option-pills">
-                                    <span class="pill active">Sand</span>
-                                    <span class="pill">Charcoal</span>
-                                    <span class="pill">Warm Beige</span>
+                                    <span class="pill active">Natural Oak</span>
+                                    <span class="pill">Honey Brown</span>
+                                    <span class="pill">Smoked Walnut</span>
                                 </div>
                             </div>
                         </div>
@@ -69,7 +69,7 @@
                         <ul class="product-meta-list">
                             <li>Free delivery in Nairobi</li>
                             <li>2-year craftsmanship warranty</li>
-                            <li>Made to order</li>
+                            <li>Seats up to 4 people</li>
                         </ul>
                     </div>
                 </div>

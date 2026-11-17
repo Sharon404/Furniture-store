@@ -177,22 +177,22 @@
             <div class="row">
                 <div class="col-md-4">
                     <a href="{{ route('product-single') }}" class="product-card" data-cursor-text="View">
-                        <img src="{{ asset('images/product-1.jpg') }}" alt="Sofa">
-                        <h3>Modern Sofa</h3>
+                        <img src="{{ asset('images/product-1.jpg') }}" alt="Round oak table">
+                        <h3>Round Oak Table</h3>
                         <p>From @ksh(14500)</p>
                     </a>
                 </div>
                 <div class="col-md-4">
                     <a href="{{ route('product-single') }}" class="product-card" data-cursor-text="View">
-                        <img src="{{ asset('images/product-2.jpg') }}" alt="Dining chair">
-                        <h3>Dining Chair</h3>
+                        <img src="{{ asset('images/product-2.jpg') }}" alt="Tufted cream sofa">
+                        <h3>Tufted Cream Sofa</h3>
                         <p>From @ksh(6200)</p>
                     </a>
                 </div>
                 <div class="col-md-4">
                     <a href="{{ route('product-single') }}" class="product-card" data-cursor-text="View">
-                        <img src="{{ asset('images/product-3.jpg') }}" alt="Coffee table">
-                        <h3>Coffee Table</h3>
+                        <img src="{{ asset('images/product-3.jpg') }}" alt="Classic accent chair">
+                        <h3>Classic Accent Chair</h3>
                         <p>From @ksh(8900)</p>
                     </a>
                 </div>
