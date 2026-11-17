@@ -252,8 +252,10 @@ main {
     content: attr(data-text);
     position: absolute;
     inset: 0;
+    display: block;
     color: #fff;
-    white-space: nowrap;
+    white-space: normal;
+    line-height: inherit;
     clip-path: circle(calc(var(--spot-size) / 2) at var(--cursor-x) var(--cursor-y));
     opacity: 0;
     transition: opacity 0.18s ease, clip-path 0.2s ease;
