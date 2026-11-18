@@ -18,11 +18,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     git \
     unzip \
     libzip-dev \
-    libpng-dev \
-    libjpeg62-turbo-dev \
-    libfreetype6-dev \
-    && docker-php-ext-configure gd --with-freetype --with-jpeg \
-    && docker-php-ext-install -j"$(nproc)" pdo_mysql mbstring bcmath zip gd \
+    libonig-dev \
+    && docker-php-ext-install -j"$(nproc)" pdo_mysql mbstring bcmath zip \
     && rm -rf /var/lib/apt/lists/*
 
 # Composer
