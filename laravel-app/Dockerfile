@@ -27,6 +27,7 @@ COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
 
 # Install dependencies first for better layer caching
 COPY composer.json composer.lock ./
+COPY app/Helpers/currency.php ./app/Helpers/currency.php
 RUN composer install --no-dev --prefer-dist --no-interaction --optimize-autoloader --no-scripts
 
 # Copy app files
