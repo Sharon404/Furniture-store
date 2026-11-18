@@ -1,6 +1,6 @@
 @extends('layouts.storefront')
 
-@section('title', 'Shop | Livora')
+@section('title', 'Shop | BEDS - TREND FURNITURE')
 
 @section('content')
     <div class="page-header dark-section parallaxie">
@@ -96,7 +96,7 @@
                                 <div class="product-card">
                                     <img src="{{ asset('images/product-1.jpg') }}" alt="Round oak table">
                                     <h3>Round Oak Table</h3>
-                                    <p>From @ksh(16800)</p>
+                                    <p>From {{ $productCatalog['round-oak-table']['listing_price'] }}</p>
                                 </div>
                             </a>
                         </div>
@@ -105,7 +105,7 @@
                                 <div class="product-card">
                                     <img src="{{ asset('images/product-2.jpg') }}" alt="Tufted cream sofa">
                                     <h3>Tufted Cream Sofa</h3>
-                                    <p>From @ksh(7200)</p>
+                                    <p>From {{ $productCatalog['tufted-cream-sofa']['listing_price'] }}</p>
                                 </div>
                             </a>
                         </div>
@@ -114,7 +114,7 @@
                                 <div class="product-card">
                                     <img src="{{ asset('images/product-3.jpg') }}" alt="Classic accent chair">
                                     <h3>Classic Accent Chair</h3>
-                                    <p>From @ksh(24900)</p>
+                                    <p>From {{ $productCatalog['classic-accent-chair']['listing_price'] }}</p>
                                 </div>
                             </a>
                         </div>
@@ -123,7 +123,7 @@
                                 <div class="product-card">
                                     <img src="{{ asset('images/product-1.jpg') }}" alt="Walnut side table">
                                     <h3>Walnut Side Table</h3>
-                                    <p>From @ksh(11200)</p>
+                                    <p>From {{ $productCatalog['walnut-side-table']['listing_price'] }}</p>
                                 </div>
                             </a>
                         </div>
@@ -132,7 +132,7 @@
                                 <div class="product-card">
                                     <img src="{{ asset('images/product-2.jpg') }}" alt="Modern two-seater sofa">
                                     <h3>Modern 2-Seater Sofa</h3>
-                                    <p>From @ksh(18450)</p>
+                                    <p>From {{ $productCatalog['modern-2-seater-sofa']['listing_price'] }}</p>
                                 </div>
                             </a>
                         </div>
@@ -141,7 +141,7 @@
                                 <div class="product-card">
                                     <img src="{{ asset('images/product-3.jpg') }}" alt="Vintage lounge chair">
                                     <h3>Vintage Lounge Chair</h3>
-                                    <p>From @ksh(22350)</p>
+                                    <p>From {{ $productCatalog['vintage-lounge-chair']['listing_price'] }}</p>
                                 </div>
                             </a>
                         </div>
@@ -151,3 +151,4 @@
         </div>
     </section>
 @endSection
+

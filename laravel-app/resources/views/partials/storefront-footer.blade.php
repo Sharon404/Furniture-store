@@ -4,7 +4,7 @@
             <div class="row">
                 <div class="col-lg-4 col-md-6">
                     <div class="footer-widget">
-                        <h3>About Livora</h3>
+                        <h3>About BEDS - TREND FURNITURE</h3>
                         <p>Modern furniture crafted for joyful living spaces, thoughtful design, and lasting comfort.</p>
                     </div>
                 </div>
@@ -36,7 +36,7 @@
                         <ul>
                             <li>Nairobi, Kenya</li>
                             <li><a href="tel:+254712345678">+254 712 345 678</a></li>
-                            <li><a href="mailto:hello@livora.com">hello@livora.com</a></li>
+                            <li><a href="mailto:hello@bedstrendfurniture.com">hello@bedstrendfurniture.com</a></li>
                         </ul>
                     </div>
                 </div>
@@ -48,7 +48,7 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-6">
-                    <p>© 2026 Livora. All rights reserved.</p>
+                    <p>© 2026 BEDS - TREND FURNITURE. All rights reserved.</p>
                 </div>
                 <div class="col-md-6 text-md-end">
                     <ul class="footer-social">

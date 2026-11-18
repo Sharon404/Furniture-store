@@ -1,6 +1,6 @@
-﻿@extends('layouts.storefront')
+@extends('layouts.storefront')
 
-@section('title', 'Order Received | Livora')
+@section('title', 'Order Received | BEDS - TREND FURNITURE')
 
 @section('content')
     <div class="page-header dark-section parallaxie">
@@ -36,7 +36,7 @@
                                 <ul>
                                     <li>Jack R. Miles</li>
                                     <li>221B Baker Street, Marylebone, London NW1 6XE</li>
-                                    <li><a href="tel:+254712345678">+254 712 345 678</a> <a href="mailto:hello@livora.co.ke">hello@livora.co.ke</a></li>
+                                    <li><a href="tel:+254712345678">+254 712 345 678</a> <a href="mailto:hello@bedstrendfurniture.com">hello@bedstrendfurniture.com</a></li>
                                 </ul>
                             </div>
 
@@ -69,7 +69,7 @@
                                 <li>Tax: <span>@ksh(0)</span></li>
                                 <li>Total: <span>@ksh(20300)</span></li>
                                 <li>Payment method: <span>Direct bank transfer</span></li>
-                                <li>Note: <span>Thank you for choosing Livora. We will keep you updated as your furniture is prepared and delivered.</span></li>
+                                <li>Note: <span>Thank you for choosing BEDS - TREND FURNITURE. We will keep you updated as your furniture is prepared and delivered.</span></li>
                             </ul>
                         </div>
 
@@ -82,3 +82,4 @@
         </div>
     </div>
 @endsection
+

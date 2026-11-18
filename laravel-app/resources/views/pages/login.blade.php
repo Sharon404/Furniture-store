@@ -1,6 +1,6 @@
-﻿@extends('layouts.storefront')
+@extends('layouts.storefront')
 
-@section('title', 'Login | Livora')
+@section('title', 'Login | BEDS - TREND FURNITURE')
 
 @section('content')
     <section class="section-space auth-page-shell">
@@ -43,3 +43,4 @@
         </div>
     </section>
 @endSection
+

@@ -1,6 +1,6 @@
-﻿@extends('layouts.storefront')
+@extends('layouts.storefront')
 
-@section('title', 'Cart | Livora')
+@section('title', 'Cart | BEDS - TREND FURNITURE')
 
 @section('content')
     <div class="page-header dark-section parallaxie">
@@ -51,3 +51,4 @@
         </div>
     </section>
 @endSection
+

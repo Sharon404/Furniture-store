@@ -1,6 +1,6 @@
 @extends('layouts.storefront')
 
-@section('title', $product['name'] . ' | Livora')
+@section('title', $product['name'] . ' | BEDS - TREND FURNITURE')
 
 @section('content')
     <div class="page-header dark-section parallaxie">
@@ -77,3 +77,4 @@
         </div>
     </section>
 @endSection
+

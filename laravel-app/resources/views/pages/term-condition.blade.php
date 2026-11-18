@@ -1,6 +1,6 @@
-﻿@extends('layouts.storefront')
+@extends('layouts.storefront')
 
-@section('title', 'Terms & Conditions | Livora')
+@section('title', 'Terms & Conditions | BEDS - TREND FURNITURE')
 
 @section('content')
     <div class="page-header dark-section parallaxie">
@@ -20,9 +20,10 @@
             <div class="row">
                 <div class="col-lg-10 mx-auto">
                     <p>Use of this website indicates acceptance of the stated terms and conditions. Customers are expected to provide accurate details during checkout and to comply with our order policies.</p>
-                    <p>Livora reserves the right to update terms and policies as required for legal, business, or operational reasons.</p>
+                    <p>BEDS - TREND FURNITURE reserves the right to update terms and policies as required for legal, business, or operational reasons.</p>
                 </div>
             </div>
         </div>
     </section>
 @endSection
+

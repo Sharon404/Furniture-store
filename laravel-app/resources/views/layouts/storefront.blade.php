@@ -3,10 +3,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Livora furniture store storefront">
-    <title>@yield('title', 'Livora | Furniture Store')</title>
+    <meta name="description" content="BEDS - TREND FURNITURE furniture store storefront">
+    <title>@yield('title', 'BEDS - TREND FURNITURE | Furniture Store')</title>
 
-    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('images/favicon.png') }}">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('images/beds-trend-furniture.png') }}">
     <link href="{{ asset('css/fonts.css') }}" rel="stylesheet" media="screen">
     <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet" media="screen">
     <link href="{{ asset('css/slicknav.min.css') }}" rel="stylesheet">
@@ -54,3 +54,4 @@
     @stack('scripts')
 </body>
 </html>
+

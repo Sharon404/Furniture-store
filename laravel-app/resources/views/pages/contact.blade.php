@@ -1,6 +1,6 @@
-﻿@extends('layouts.storefront')
+@extends('layouts.storefront')
 
-@section('title', 'Contact Us | Livora')
+@section('title', 'Contact Us | BEDS - TREND FURNITURE')
 
 @section('content')
     <div class="page-header dark-section parallaxie">
@@ -27,7 +27,7 @@
                 <div class="col-lg-4">
                     <div class="feature-box">
                         <h3>Email</h3>
-                        <p><a href="mailto:hello@livora.com">hello@livora.com</a></p>
+                        <p><a href="mailto:hello@bedstrendfurniture.com">hello@bedstrendfurniture.com</a></p>
                     </div>
                 </div>
                 <div class="col-lg-4">
@@ -59,3 +59,4 @@
         </div>
     </section>
 @endSection
+

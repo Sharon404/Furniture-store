@@ -1,6 +1,6 @@
 @extends('layouts.storefront')
 
-@section('title', 'Sign Up | Livora')
+@section('title', 'Sign Up | BEDS - TREND FURNITURE')
 
 @section('content')
     <section class="section-space auth-page-shell">
@@ -10,7 +10,7 @@
                     <div class="auth-card">
                         <div class="auth-header">
                             <span class="section-sub-title">Create account</span>
-                            <h2>Join Livora</h2>
+                            <h2>Join BEDS - TREND FURNITURE</h2>
                         </div>
 
                         <form class="auth-form">
@@ -56,3 +56,4 @@
         </div>
     </section>
 @endSection
+

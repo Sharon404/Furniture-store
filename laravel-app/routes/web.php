@@ -9,6 +9,7 @@ $productCatalog = [
 		'image' => 'images/product-1.jpg',
 		'alt' => 'Round oak table',
 		'price' => '@ksh(16800)',
+		'listing_price' => '@ksh(16800)',
 		'description' => 'A handcrafted round oak table designed for modern homes. Its compact footprint and natural finish make it perfect for dining nooks, coffee corners, and layered living spaces.',
 		'materials' => ['Solid Oak', 'Walnut Veneer', 'Ash Wood'],
 		'finishes' => ['Natural Oak', 'Honey Brown', 'Smoked Walnut'],
@@ -20,6 +21,7 @@ $productCatalog = [
 		'image' => 'images/product-2.jpg',
 		'alt' => 'Tufted cream sofa',
 		'price' => '@ksh(18450)',
+		'listing_price' => '@ksh(18450)',
 		'description' => 'A refined two-seater sofa with plush tufted upholstery, built for comfort and elegant living room styling.',
 		'materials' => ['Linen Blend', 'Performance Fabric', 'Velvet'],
 		'finishes' => ['Cream', 'Warm Beige', 'Pearl Grey'],
@@ -31,6 +33,7 @@ $productCatalog = [
 		'image' => 'images/product-3.jpg',
 		'alt' => 'Classic accent chair',
 		'price' => '@ksh(24900)',
+		'listing_price' => '@ksh(24900)',
 		'description' => 'A statement accent chair with timeless lines and supportive seating, ideal for reading corners and living rooms.',
 		'materials' => ['Solid Wood Frame', 'Boucle Fabric', 'Premium Foam'],
 		'finishes' => ['Sage', 'Caramel', 'Charcoal'],
@@ -42,6 +45,7 @@ $productCatalog = [
 		'image' => 'images/product-1.jpg',
 		'alt' => 'Walnut side table',
 		'price' => '@ksh(11200)',
+		'listing_price' => '@ksh(11200)',
 		'description' => 'A compact walnut side table that pairs naturally with sofas and accent seating for a warm modern finish.',
 		'materials' => ['Walnut Veneer', 'Engineered Wood', 'Powder-Coated Base'],
 		'finishes' => ['Walnut', 'Mocha', 'Espresso'],
@@ -53,6 +57,7 @@ $productCatalog = [
 		'image' => 'images/product-2.jpg',
 		'alt' => 'Modern two-seater sofa',
 		'price' => '@ksh(18450)',
+		'listing_price' => '@ksh(18450)',
 		'description' => 'A clean-lined modern sofa made for compact living spaces, balancing comfort, style, and durability.',
 		'materials' => ['Linen Blend', 'Soft Velvet', 'High Density Foam'],
 		'finishes' => ['Stone', 'Cream', 'Taupe'],
@@ -63,7 +68,8 @@ $productCatalog = [
 		'name' => 'Vintage Lounge Chair',
 		'image' => 'images/product-3.jpg',
 		'alt' => 'Vintage lounge chair',
-		'price' => '@ksh(22350)',
+		'price' => '@ksh(223500)',
+		'listing_price' => '@ksh(223500)',
 		'description' => 'A lounge chair inspired by vintage silhouettes with updated upholstery for premium comfort and character.',
 		'materials' => ['Hardwood Frame', 'Linen Blend', 'Brass Accent Legs'],
 		'finishes' => ['Olive', 'Rust', 'Midnight'],
@@ -71,9 +77,17 @@ $productCatalog = [
 	],
 ];
 
-Route::view('/', 'pages.home')->name('home');
+Route::get('/', function () use ($productCatalog) {
+	return view('pages.home', [
+		'productCatalog' => $productCatalog,
+	]);
+})->name('home');
 Route::view('/about', 'pages.about')->name('about');
-Route::view('/products', 'pages.products')->name('products');
+Route::get('/products', function () use ($productCatalog) {
+	return view('pages.products', [
+		'productCatalog' => $productCatalog,
+	]);
+})->name('products');
 Route::get('/products/{slug}', function (string $slug) use ($productCatalog) {
 	$product = $productCatalog[$slug] ?? null;
 

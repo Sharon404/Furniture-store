@@ -1,6 +1,6 @@
 @extends('layouts.storefront')
 
-@section('title', 'Home | Livora')
+@section('title', 'Home | BEDS - TREND FURNITURE')
 
 @section('content')
     <section class="hero-section dark-section">
@@ -179,21 +179,21 @@
                     <a href="{{ route('product.show', ['slug' => 'round-oak-table']) }}" class="product-card" data-cursor-text="View">
                         <img src="{{ asset('images/product-1.jpg') }}" alt="Round oak table">
                         <h3>Round Oak Table</h3>
-                        <p>From @ksh(14500)</p>
+                        <p>From {{ $productCatalog['round-oak-table']['listing_price'] }}</p>
                     </a>
                 </div>
                 <div class="col-md-4">
                     <a href="{{ route('product.show', ['slug' => 'tufted-cream-sofa']) }}" class="product-card" data-cursor-text="View">
                         <img src="{{ asset('images/product-2.jpg') }}" alt="Tufted cream sofa">
                         <h3>Tufted Cream Sofa</h3>
-                        <p>From @ksh(6200)</p>
+                        <p>From {{ $productCatalog['tufted-cream-sofa']['listing_price'] }}</p>
                     </a>
                 </div>
                 <div class="col-md-4">
                     <a href="{{ route('product.show', ['slug' => 'classic-accent-chair']) }}" class="product-card" data-cursor-text="View">
                         <img src="{{ asset('images/product-3.jpg') }}" alt="Classic accent chair">
                         <h3>Classic Accent Chair</h3>
-                        <p>From @ksh(8900)</p>
+                        <p>From {{ $productCatalog['classic-accent-chair']['listing_price'] }}</p>
                     </a>
                 </div>
             </div>
@@ -338,7 +338,7 @@
                                                 <i class="fa-solid fa-star"></i>
                                             </div>
                                             <div class="testimonial-item-content">
-                                                <p>“We wanted pieces that felt both luxurious and practical, and Livora delivered exactly that. The craftsmanship is exceptional.”</p>
+                                                <p>“We wanted pieces that felt both luxurious and practical, and BEDS - TREND FURNITURE delivered exactly that. The craftsmanship is exceptional.”</p>
                                             </div>
                                             <div class="testimonial-item-author-box">
                                                 <div class="testimonial-item-author">
@@ -367,4 +367,5 @@
         </div>
     </section>
 @endSection
+
 

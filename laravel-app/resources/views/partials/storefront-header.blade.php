@@ -4,7 +4,7 @@
             <div class="container">
                 <div class="header-action-box d-flex align-items-center justify-content-between w-100">
                     <a class="navbar-brand" href="{{ route('home') }}">
-                        <img src="{{ asset('images/logo.svg') }}" alt="Livora Logo">
+                        <img src="{{ asset('images/beds-trend-furniture.png') }}" alt="BEDS - TREND FURNITURE Logo">
                     </a>
 
                     <div class="main-menu d-flex align-items-center gap-4">
@@ -35,3 +35,4 @@
         </nav>
     </div>
 </header>
+

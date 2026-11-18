@@ -1,6 +1,6 @@
-Ôªø@extends('layouts.storefront')
+@extends('layouts.storefront')
 
-@section('title', 'Testimonials | Livora')
+@section('title', 'Testimonials | BEDS - TREND FURNITURE')
 
 @section('content')
     <div class="page-header dark-section parallaxie">
@@ -20,17 +20,18 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="feature-box">
-                        <p>‚ÄúThe quality exceeded our expectations. The dining set transformed our home.‚Äù</p>
-                        <h4>‚Äî Rose M.</h4>
+                        <p>ìThe quality exceeded our expectations. The dining set transformed our home.î</p>
+                        <h4>ó Rose M.</h4>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="feature-box">
-                        <p>‚ÄúBeautiful furniture and a smooth delivery process. We are very happy with the result.‚Äù</p>
-                        <h4>‚Äî Daniel K.</h4>
+                        <p>ìBeautiful furniture and a smooth delivery process. We are very happy with the result.î</p>
+                        <h4>ó Daniel K.</h4>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 @endSection
+

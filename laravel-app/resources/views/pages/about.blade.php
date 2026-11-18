@@ -1,6 +1,6 @@
 @extends('layouts.storefront')
 
-@section('title', 'About Us | Livora')
+@section('title', 'About Us | BEDS - TREND FURNITURE')
 
 @section('content')
     <div class="page-header dark-section parallaxie">
@@ -27,11 +27,11 @@
                 <div class="col-lg-6">
                     <span class="section-sub-title">Our story</span>
                     <h2 class="text-anime-style-3">Where comfort meets timeless design</h2>
-                    <p>Livora creates furniture that balances modern style with everyday comfort. We design for busy homes, inspiring workspaces, and lasting value.</p>
+                    <p>BEDS - TREND FURNITURE creates furniture that balances modern style with everyday comfort. We design for busy homes, inspiring workspaces, and lasting value.</p>
                     <p>From lounges to dining spaces, we help customers shape rooms they genuinely enjoy living in.</p>
                 </div>
                 <div class="col-lg-6">
-                    <img src="{{ asset('images/about-image.jpg') }}" alt="About Livora" class="img-fluid rounded">
+                    <img src="{{ asset('images/about-image.jpg') }}" alt="About BEDS - TREND FURNITURE" class="img-fluid rounded">
                 </div>
             </div>
         </div>
@@ -68,3 +68,4 @@
         </div>
     </section>
 @endSection
+
