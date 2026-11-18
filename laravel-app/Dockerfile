@@ -4,6 +4,10 @@ ENV COMPOSER_ALLOW_SUPERUSER=1 \
     APP_ENV=production \
     APP_DEBUG=false \
     RUN_MIGRATIONS=false \
+    SESSION_DRIVER=file \
+    CACHE_STORE=file \
+    QUEUE_CONNECTION=sync \
+    FILESYSTEM_DISK=local \
     LOG_CHANNEL=stderr \
     APP_CONFIG_CACHE=/tmp/config.php \
     APP_EVENTS_CACHE=/tmp/events.php \
@@ -46,4 +50,4 @@ RUN mkdir -p storage/framework/{cache,sessions,views} bootstrap/cache /tmp/views
 EXPOSE 10000
 
 # Start Laravel on Render-assigned port
-CMD ["sh", "-lc", "if [ \"${RUN_MIGRATIONS}\" = \"true\" ]; then php artisan migrate --force ; fi ; php artisan config:cache ; php artisan route:cache ; php artisan view:cache ; php artisan serve --host=0.0.0.0 --port=${PORT:-10000}"]
+CMD ["sh", "-lc", "if [ -z \"${APP_KEY}\" ]; then export APP_KEY=base64:$(php -r 'echo base64_encode(random_bytes(32));'); fi ; if [ \"${RUN_MIGRATIONS}\" = \"true\" ]; then php artisan migrate --force ; fi ; php artisan config:cache ; php artisan route:cache || true ; php artisan view:cache ; php artisan serve --host=0.0.0.0 --port=${PORT:-10000}"]
