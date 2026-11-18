@@ -27,11 +27,13 @@ COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
 
 # Install dependencies first for better layer caching
 COPY composer.json composer.lock ./
-COPY app/Helpers/currency.php ./app/Helpers/currency.php
-RUN composer install --no-dev --prefer-dist --no-interaction --optimize-autoloader --no-scripts
+RUN composer install --no-dev --prefer-dist --no-interaction --no-scripts --no-autoloader
 
 # Copy app files
 COPY . .
+
+# Generate optimized autoload only after complete source is present
+RUN composer dump-autoload --no-dev --optimize --no-interaction
 
 # Run Laravel package discovery after full source is available
 RUN php artisan package:discover --ansi
