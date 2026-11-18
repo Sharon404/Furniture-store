@@ -57,7 +57,19 @@ img {
 
 .navbar-brand img {
     width: auto;
-    max-height: 58px;
+    max-height: 86px;
+}
+
+@media (max-width: 1199.98px) {
+    .navbar-brand img {
+        max-height: 74px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .navbar-brand img {
+        max-height: 62px;
+    }
 }
 
 .utility-actions {
