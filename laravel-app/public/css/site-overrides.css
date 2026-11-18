@@ -37,6 +37,12 @@ img {
     box-shadow: 0 10px 30px rgba(20, 20, 20, 0.03);
 }
 
+.main-header .header-sticky {
+    position: sticky;
+    top: 0;
+    z-index: 1030;
+}
+
 .breadcrumb {
     --bs-breadcrumb-divider: "/";
 }
@@ -109,6 +115,14 @@ img {
 
 .main-menu .navbar-nav {
     gap: 2rem !important;
+}
+
+.navbar-toggle {
+    margin-left: auto;
+}
+
+.responsive-menu {
+    width: 100%;
 }
 
 .main-menu .nav-link {
@@ -1548,6 +1562,137 @@ main {
 }
 
 @media (max-width: 991.98px) {
+    .main-header {
+        position: sticky;
+        top: 0;
+    }
+
+    .main-header .header-sticky {
+        position: sticky;
+        top: 0;
+        background: rgba(255, 255, 255, 0.97);
+    }
+
+    .main-menu {
+        display: none !important;
+    }
+
+    .utility-actions {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-left: 0;
+    }
+
+    .utility-action {
+        width: 38px;
+        height: 38px;
+    }
+
+    .utility-action svg {
+        width: 16px;
+        height: 16px;
+    }
+
+    .header-action-box {
+        width: 100% !important;
+        margin-left: 0;
+        gap: 12px;
+        flex-wrap: nowrap;
+        justify-content: space-between !important;
+    }
+
+    .navbar-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        min-width: 44px;
+    }
+
+    .navbar-toggle .slicknav_btn {
+        width: 44px;
+        height: 44px;
+        border-radius: 10px;
+        border: 1px solid rgba(23, 23, 23, 0.12);
+        background: linear-gradient(180deg, #f7ebdd 0%, #edd4b8 100%);
+        box-shadow: 0 10px 20px rgba(20, 20, 20, 0.1);
+    }
+
+    .navbar-toggle .slicknav_icon .slicknav_icon-bar {
+        width: 20px;
+        height: 2px;
+        background: #3a2a1b;
+        margin: 4px auto !important;
+    }
+
+    .responsive-menu {
+        margin-top: 8px;
+    }
+
+    .responsive-menu .slicknav_menu {
+        position: static;
+        background: transparent;
+        padding: 0;
+    }
+
+    .responsive-menu .slicknav_nav {
+        background: #fff;
+        border: 1px solid rgba(23, 23, 23, 0.08);
+        border-radius: 14px;
+        box-shadow: 0 18px 30px rgba(20, 20, 20, 0.08);
+        overflow: hidden;
+        transform-origin: top;
+        animation: mobileMenuReveal 0.24s ease;
+    }
+
+    .responsive-menu .slicknav_nav li a,
+    .responsive-menu .slicknav_row {
+        color: var(--brand-dark);
+        font-size: 0.95rem;
+        font-weight: 700;
+        letter-spacing: 0.02em;
+        padding: 14px 18px;
+        border-bottom: 1px solid rgba(23, 23, 23, 0.06);
+        background: #fff;
+    }
+
+    .responsive-menu .slicknav_nav li:last-child a,
+    .responsive-menu .slicknav_nav li:last-child .slicknav_row {
+        border-bottom: 0;
+    }
+
+    .responsive-menu .slicknav_nav li a:hover,
+    .responsive-menu .slicknav_nav li a:focus,
+    .responsive-menu .slicknav_nav li.slicknav_open > a {
+        color: var(--brand-primary-dark);
+        background: #fcf6ef;
+    }
+
+    .navbar-brand img {
+        max-height: 64px;
+    }
+
+    .product-card img {
+        height: 240px;
+        object-fit: contain;
+        background: #faf7f2;
+        padding: 8px;
+    }
+
+    .shop-page-section .row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .shop-products-col {
+        order: 1;
+    }
+
+    .shop-filters-col {
+        order: 2;
+        margin-top: 24px;
+    }
+
     .hero-section {
         padding-top: 80px;
         padding-bottom: 70px;
@@ -1559,6 +1704,17 @@ main {
 
     .product-card img {
         height: 280px;
+    }
+}
+
+@keyframes mobileMenuReveal {
+    from {
+        opacity: 0;
+        transform: translateY(-6px) scaleY(0.98);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scaleY(1);
     }
 }
 
@@ -1588,6 +1744,11 @@ main {
 
     .product-card {
         margin-bottom: 20px;
+    }
+
+    .product-card img {
+        height: 210px;
+        object-fit: contain;
     }
 
     .wishlist-grid {

@@ -24,7 +24,7 @@
     <section class="section-space shop-page-section">
         <div class="container">
             <div class="row">
-                <aside class="col-lg-3">
+                <aside class="col-lg-3 shop-filters-col">
                     <div class="shop-sidebar">
                         <div class="sidebar-box">
                             <h3>Categories</h3>
@@ -74,7 +74,7 @@
                     </div>
                 </aside>
 
-                <div class="col-lg-9">
+                <div class="col-lg-9 shop-products-col">
                     <div class="shop-toolbar">
                         <div>
                             <p>Showing 12 curated pieces</p>

@@ -1,14 +1,15 @@
-<header class="main-header">
+<header class="main-header active-sticky-header">
     <div class="header-sticky">
         <nav class="navbar navbar-expand-lg">
             <div class="container">
+                <div class="navbar-toggle"></div>
                 <div class="header-action-box d-flex align-items-center justify-content-between w-100">
                     <a class="navbar-brand" href="{{ route('home') }}">
                         <img src="{{ asset('images/beds-trend-furniture.png') }}" alt="BEDS - TREND FURNITURE Logo">
                     </a>
 
                     <div class="main-menu d-flex align-items-center gap-4">
-                        <ul class="navbar-nav d-flex flex-row gap-4 align-items-center mb-0">
+                        <ul id="menu" class="navbar-nav d-flex flex-row gap-4 align-items-center mb-0">
                             <li class="nav-item"><a class="nav-link" href="{{ route('home') }}">Home</a></li>
                             <li class="nav-item"><a class="nav-link" href="{{ route('products') }}">Shop</a></li>
                             <li class="nav-item"><a class="nav-link" href="{{ route('about') }}">About Us</a></li>
@@ -31,6 +32,7 @@
                         </a>
                     </div>
                 </div>
+                <div class="responsive-menu"></div>
             </div>
         </nav>
     </div>

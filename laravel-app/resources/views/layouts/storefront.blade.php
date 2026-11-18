@@ -38,7 +38,6 @@
     <script src="{{ asset('js/bootstrap.min.js') }}"></script>
     <script src="{{ asset('js/validator.min.js') }}"></script>
     <script src="{{ asset('js/jquery.slicknav.js') }}"></script>
-    <script src="{{ asset('js/jquery.min.js') }}"></script>
     <script src="{{ asset('js/gsap.min.js') }}"></script>
     <script src="{{ asset('js/ScrollTrigger.min.js') }}"></script>
     <script src="{{ asset('js/SplitText.min.js') }}"></script>
