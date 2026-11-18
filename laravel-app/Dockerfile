@@ -27,10 +27,13 @@ COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
 
 # Install dependencies first for better layer caching
 COPY composer.json composer.lock ./
-RUN composer install --no-dev --prefer-dist --no-interaction --optimize-autoloader
+RUN composer install --no-dev --prefer-dist --no-interaction --optimize-autoloader --no-scripts
 
 # Copy app files
 COPY . .
+
+# Run Laravel package discovery after full source is available
+RUN php artisan package:discover --ansi
 
 # Ensure runtime dirs are writable
 RUN mkdir -p storage/framework/{cache,sessions,views} bootstrap/cache /tmp/views \
