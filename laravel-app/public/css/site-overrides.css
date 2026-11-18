@@ -19,6 +19,7 @@ body {
     color: var(--brand-dark);
     font-family: "Segoe UI", Arial, sans-serif;
     line-height: 1.6;
+    padding-top: 86px;
 }
 
 img {
@@ -27,9 +28,12 @@ img {
     display: block;
 }
 
-.main-header {
-    position: sticky;
+header.main-header {
+    position: fixed;
     top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
     z-index: 1030;
     background: rgba(255, 255, 255, 0.94);
     backdrop-filter: blur(12px);
@@ -37,8 +41,8 @@ img {
     box-shadow: 0 10px 30px rgba(20, 20, 20, 0.03);
 }
 
-.main-header .header-sticky {
-    position: sticky;
+header.main-header .header-sticky {
+    position: relative;
     top: 0;
     z-index: 1030;
 }
@@ -48,17 +52,22 @@ img {
 }
 
 .header-sticky nav {
-    min-height: 88px;
+    min-height: 72px;
 }
 
 .header-action-box {
-    gap: 24px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 16px;
+    padding: 8px 15px;
 }
 
 .navbar-brand {
     display: flex;
     align-items: center;
     margin-right: 0;
+    width: auto;
 }
 
 .navbar-brand img {
@@ -78,11 +87,71 @@ img {
     }
 }
 
+/* Keep desktop (mouse/trackpad) header in two-row layout even in narrow windows */
+@media (min-width: 992px) and (hover: hover) and (pointer: fine) {
+    body {
+        padding-top: 108px;
+    }
+
+    .header-action-box,
+    .header-action-box.d-flex {
+        display: grid !important;
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+        grid-template-areas:
+            "brand actions"
+            "menu menu";
+        align-items: center;
+        row-gap: 2px;
+        column-gap: 16px;
+        padding: 4px 12px;
+    }
+
+    .navbar-brand {
+        grid-area: brand;
+        width: 100%;
+        margin: 0;
+    }
+
+    .utility-actions {
+        grid-area: actions;
+        width: 100%;
+        justify-content: flex-end;
+        margin: 0 !important;
+        order: 0;
+    }
+
+    .main-menu {
+        grid-area: menu;
+        display: flex !important;
+        margin-top: 2px;
+    }
+
+    .main-menu .navbar-nav {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .navbar-toggle,
+    .responsive-menu {
+        display: none !important;
+    }
+}
+
 .utility-actions {
     display: flex;
     align-items: center;
     gap: 12px;
     margin-left: auto;
+    width: auto;
+    justify-content: flex-end;
+}
+
+.main-menu {
+    margin-top: 2px;
+}
+
+.main-menu .navbar-nav {
+    gap: 2rem !important;
 }
 
 .utility-action {
@@ -1562,13 +1631,12 @@ main {
 }
 
 @media (max-width: 991.98px) {
-    .main-header {
-        position: sticky;
-        top: 0;
+    body {
+        padding-top: 106px;
     }
 
-    .main-header .header-sticky {
-        position: sticky;
+    header.main-header .header-sticky {
+        position: relative;
         top: 0;
         background: rgba(255, 255, 255, 0.97);
     }
@@ -1596,11 +1664,35 @@ main {
     }
 
     .header-action-box {
+        display: flex !important;
         width: 100% !important;
         margin-left: 0;
         gap: 12px;
-        flex-wrap: nowrap;
+        padding: 8px 10px;
+        flex-wrap: wrap;
         justify-content: space-between !important;
+    }
+
+    .navbar-brand {
+        width: auto;
+        flex: 1 1 auto;
+        min-width: 0;
+    }
+
+    .navbar-toggle {
+        order: 3;
+        width: 100%;
+        margin-top: 4px;
+        margin-right: 0;
+        margin-left: 0;
+        justify-content: flex-start;
+    }
+
+    .utility-actions {
+        order: 2;
+        width: auto;
+        margin-top: 0;
+        margin-left: auto;
     }
 
     .navbar-toggle {
@@ -1716,6 +1808,12 @@ main {
     to {
         opacity: 1;
         transform: translateY(0) scaleY(1);
+    }
+}
+
+@media (max-width: 767.98px) {
+    body {
+        padding-top: 96px;
     }
 }
 
