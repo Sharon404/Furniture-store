@@ -26,6 +26,15 @@ class AppServiceProvider extends ServiceProvider
 
             $appUrl = config('app.url');
             if (is_string($appUrl) && $appUrl !== '') {
+                $host = parse_url($appUrl, PHP_URL_HOST);
+
+                // Do not force localhost-style APP_URL values in production.
+                if (in_array($host, ['localhost', '127.0.0.1'], true)) {
+                    $appUrl = '';
+                }
+            }
+
+            if (is_string($appUrl) && $appUrl !== '') {
                 URL::forceRootUrl($appUrl);
             }
         }
