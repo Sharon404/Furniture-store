@@ -245,7 +245,7 @@
                     </div>
                     <div class="trending-product-item-content">
                         <h3><a href="{{ route('product.show', ['slug' => 'round-oak-table']) }}">Cloud Lounge</a></h3>
-                        <p><b>KES 48,000</b></p>
+                        <p><b>KES 168,000</b></p>
                     </div>
                 </article>
 
@@ -313,11 +313,11 @@
                                                 <div class="testimonial-item-author">
                                                     <div class="testimonial-item-author-image">
                                                         <figure class="image-anime">
-                                                            <img src="{{ asset('images/author-1.jpg') }}" alt="Olivia Bennett">
+                                                            <img src="{{ asset('images/vallery.png') }}" alt="Vallery Nanjala">
                                                         </figure>
                                                     </div>
                                                     <div class="testimonial-item-author-content">
-                                                        <h2>Olivia Bennett</h2>
+                                                        <h2>Vallery Nanjala</h2>
                                                         <p>Homeowner</p>
                                                     </div>
                                                 </div>
@@ -344,11 +344,11 @@
                                                 <div class="testimonial-item-author">
                                                     <div class="testimonial-item-author-image">
                                                         <figure class="image-anime">
-                                                            <img src="{{ asset('images/author-2.jpg') }}" alt="Dylan Moyo">
+                                                            <img src="{{ asset('images/peter.png') }}" alt="Peter Njenga">
                                                         </figure>
                                                     </div>
                                                     <div class="testimonial-item-author-content">
-                                                        <h2>Dylan Moyo</h2>
+                                                        <h2>Peter Njenga</h2>
                                                         <p>Interior Client</p>
                                                     </div>
                                                 </div>
