@@ -318,7 +318,7 @@
                                                     </div>
                                                     <div class="testimonial-item-author-content">
                                                         <h2>Vallery Nanjala</h2>
-                                                        <p>Homeowner</p>
+                                                        <p>Home Owner</p>
                                                     </div>
                                                 </div>
                                                 <div class="testimonial-item-quotes">
