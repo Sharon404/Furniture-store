@@ -6,8 +6,9 @@
     <meta name="description" content="BEDS - TREND FURNITURE furniture store storefront">
     <title>@yield('title', 'BEDS - TREND FURNITURE | Furniture Store')</title>
 
+    <link rel="icon" type="image/svg+xml" media="(prefers-color-scheme: light)" href="{{ asset('images/branding/icon-brown.svg') }}">
+    <link rel="icon" type="image/svg+xml" media="(prefers-color-scheme: dark)" href="{{ asset('images/branding/icon-light.svg') }}">
     <link rel="icon" type="image/svg+xml" href="{{ asset('images/branding/icon-brown.svg') }}">
-    <link rel="alternate icon" type="image/svg+xml" media="(prefers-color-scheme: dark)" href="{{ asset('images/branding/icon-light.svg') }}">
     <link href="{{ asset('css/fonts.css') }}" rel="stylesheet" media="screen">
     <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet" media="screen">
     <link href="{{ asset('css/slicknav.min.css') }}" rel="stylesheet">
