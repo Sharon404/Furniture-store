@@ -10,10 +10,6 @@
                         </a>
                         <h3>About BEDS - TREND FURNITURE</h3>
                         <p>Modern furniture crafted for joyful living spaces, thoughtful design, and lasting comfort.</p>
-                        <div class="footer-icon-pair" aria-hidden="true">
-                            <img src="{{ asset('images/branding/icon-light.svg') }}" alt="">
-                            <img src="{{ asset('images/branding/icon-brown.svg') }}" alt="">
-                        </div>
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-6">

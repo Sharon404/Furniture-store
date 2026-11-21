@@ -77,37 +77,45 @@ header.main-header .header-sticky {
     max-height: 120px;
 }
 
+#loading-icon,
+#loading-icon img,
+.preloader #loading-icon,
+.preloader #loading-icon img {
+    max-width: none;
+}
+
+.preloader .loading-container,
+.preloader .loading {
+    width: 200px;
+    height: 200px;
+}
+
+#loading-icon {
+    width: 132px;
+    height: 132px;
+}
+
 #loading-icon img {
-    width: 118px;
-    height: 118px;
+    width: 100%;
+    height: 100%;
     object-fit: contain;
 }
 
 .footer-brandmark {
-    display: inline-flex;
-    margin-bottom: 14px;
+    display: block;
+    width: fit-content;
+    line-height: 0;
+    margin: 0 0 12px;
 }
 
 .footer-brandmark img {
     width: auto;
-    max-height: 102px;
+    height: 146px;
+    max-height: none;
 }
 
 .footer-logo-light-bg {
     display: none;
-}
-
-.footer-icon-pair {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    margin-top: 12px;
-}
-
-.footer-icon-pair img {
-    width: 38px;
-    height: 38px;
-    object-fit: contain;
 }
 
 .light-section .footer-logo-dark-bg,
@@ -132,12 +140,7 @@ header.main-header .header-sticky {
     }
 
     .footer-brandmark img {
-        max-height: 82px;
-    }
-
-    .footer-icon-pair img {
-        width: 30px;
-        height: 30px;
+        height: 114px;
     }
 }
 
@@ -537,7 +540,7 @@ main {
 }
 
 .footer-top {
-    padding: 80px 0 40px;
+    padding: 48px 0 32px;
 }
 
 .footer-widget h3 {
@@ -1909,7 +1912,7 @@ main {
 
     .footer-social {
         justify-content: flex-start;
-        margin-top: 16px;
+        margin-top: 0;
     }
 }
 
