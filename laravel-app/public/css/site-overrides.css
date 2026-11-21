@@ -72,7 +72,50 @@ header.main-header .header-sticky {
 
 .navbar-brand img {
     width: auto;
-    max-height: 86px;
+    max-height: 82px;
+}
+
+#loading-icon img {
+    width: 64px;
+    height: 64px;
+    object-fit: contain;
+}
+
+.footer-brandmark {
+    display: inline-flex;
+    margin-bottom: 14px;
+}
+
+.footer-brandmark img {
+    width: auto;
+    max-height: 52px;
+}
+
+.footer-logo-light-bg {
+    display: none;
+}
+
+.footer-icon-pair {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 12px;
+}
+
+.footer-icon-pair img {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+}
+
+.light-section .footer-logo-dark-bg,
+.dark-section .footer-logo-light-bg {
+    display: none;
+}
+
+.light-section .footer-logo-light-bg,
+.dark-section .footer-logo-dark-bg {
+    display: inline;
 }
 
 @media (max-width: 1199.98px) {

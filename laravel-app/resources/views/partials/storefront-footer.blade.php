@@ -4,8 +4,16 @@
             <div class="row">
                 <div class="col-lg-4 col-md-6">
                     <div class="footer-widget">
+                        <a href="{{ route('home') }}" class="footer-brandmark" aria-label="BEDS - TREND FURNITURE home">
+                            <img src="{{ asset('images/branding/logo-secondary-dark-bg.svg') }}" alt="BEDS - TREND FURNITURE secondary logo for dark background" class="footer-logo-dark-bg">
+                            <img src="{{ asset('images/branding/logo-secondary-light-bg.svg') }}" alt="BEDS - TREND FURNITURE secondary logo for light background" class="footer-logo-light-bg">
+                        </a>
                         <h3>About BEDS - TREND FURNITURE</h3>
                         <p>Modern furniture crafted for joyful living spaces, thoughtful design, and lasting comfort.</p>
+                        <div class="footer-icon-pair" aria-hidden="true">
+                            <img src="{{ asset('images/branding/icon-light.svg') }}" alt="">
+                            <img src="{{ asset('images/branding/icon-brown.svg') }}" alt="">
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-6">
