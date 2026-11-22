@@ -86,13 +86,13 @@ header.main-header .header-sticky {
 
 .preloader .loading-container,
 .preloader .loading {
-    width: 200px;
-    height: 200px;
+    width: 140px;
+    height: 140px;
 }
 
 #loading-icon {
-    width: 132px;
-    height: 132px;
+    width: 84px;
+    height: 84px;
 }
 
 #loading-icon img {
