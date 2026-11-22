@@ -1909,6 +1909,12 @@ main {
         object-fit: contain;
     }
 
+    .section-space.light-section .product-card img {
+        height: 230px;
+        object-fit: cover;
+        object-position: center;
+    }
+
     .wishlist-grid {
         grid-template-columns: 1fr;
     }

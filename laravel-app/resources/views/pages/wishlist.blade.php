@@ -25,9 +25,9 @@
         <div class="container">
             <div class="wishlist-grid">
                 <div class="product-card wishlist-item">
-                    <img src="{{ asset('images/product-1.jpg') }}" alt="Round oak table">
+                    <img src="{{ asset('images/corner-seat.jpeg') }}" alt="Corner sectional seat">
                     <div class="wishlist-card-body">
-                        <h3>Round Oak Table</h3>
+                        <h3>Haven Corner Sectional Seat</h3>
                         <p>From @ksh(16800)</p>
                     </div>
                     <div class="wishlist-actions">
@@ -37,9 +37,9 @@
                 </div>
 
                 <div class="product-card wishlist-item">
-                    <img src="{{ asset('images/product-2.jpg') }}" alt="Tufted cream sofa">
+                    <img src="{{ asset('images/linen-couch.jpeg') }}" alt="Linen couch">
                     <div class="wishlist-card-body">
-                        <h3>Tufted Cream Sofa</h3>
+                        <h3>Cloud Linen Couch</h3>
                         <p>From @ksh(18450)</p>
                     </div>
                     <div class="wishlist-actions">
@@ -49,9 +49,9 @@
                 </div>
 
                 <div class="product-card wishlist-item">
-                    <img src="{{ asset('images/product-3.jpg') }}" alt="Classic accent chair">
+                    <img src="{{ asset('images/recliner-couch.jpeg') }}" alt="Recliner couch">
                     <div class="wishlist-card-body">
-                        <h3>Classic Accent Chair</h3>
+                        <h3>Heritage Recliner Couch</h3>
                         <p>From @ksh(24900)</p>
                     </div>
                     <div class="wishlist-actions">
@@ -62,5 +62,5 @@
             </div>
         </div>
     </section>
-@endSection
+@endsection
 
