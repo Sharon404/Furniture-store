@@ -176,24 +176,27 @@
             </div>
             <div class="row">
                 <div class="col-md-4">
-                    <a href="{{ route('product.show', ['slug' => 'round-oak-table']) }}" class="product-card" data-cursor-text="View">
-                        <img src="{{ asset('images/product-1.jpg') }}" alt="Round oak table">
-                        <h3>Round Oak Table</h3>
-                        <p>From {{ $productCatalog['round-oak-table']['listing_price'] }}</p>
+                    <a href="{{ route('product.show', ['slug' => $productCatalog['round-oak-table']['slug']]) }}" class="product-card" data-cursor-text="View">
+                        <img src="{{ asset($productCatalog['round-oak-table']['image']) }}" alt="{{ $productCatalog['round-oak-table']['alt'] }}">
+                        <h3>{{ $productCatalog['round-oak-table']['name'] }}</h3>
+                        <p class="product-snippet">{{ $productCatalog['round-oak-table']['short_description'] }}</p>
+                        <p class="product-price">From {{ $productCatalog['round-oak-table']['listing_price'] }}</p>
                     </a>
                 </div>
                 <div class="col-md-4">
-                    <a href="{{ route('product.show', ['slug' => 'tufted-cream-sofa']) }}" class="product-card" data-cursor-text="View">
-                        <img src="{{ asset('images/product-2.jpg') }}" alt="Tufted cream sofa">
-                        <h3>Tufted Cream Sofa</h3>
-                        <p>From {{ $productCatalog['tufted-cream-sofa']['listing_price'] }}</p>
+                    <a href="{{ route('product.show', ['slug' => $productCatalog['tufted-cream-sofa']['slug']]) }}" class="product-card" data-cursor-text="View">
+                        <img src="{{ asset($productCatalog['tufted-cream-sofa']['image']) }}" alt="{{ $productCatalog['tufted-cream-sofa']['alt'] }}">
+                        <h3>{{ $productCatalog['tufted-cream-sofa']['name'] }}</h3>
+                        <p class="product-snippet">{{ $productCatalog['tufted-cream-sofa']['short_description'] }}</p>
+                        <p class="product-price">From {{ $productCatalog['tufted-cream-sofa']['listing_price'] }}</p>
                     </a>
                 </div>
                 <div class="col-md-4">
-                    <a href="{{ route('product.show', ['slug' => 'classic-accent-chair']) }}" class="product-card" data-cursor-text="View">
-                        <img src="{{ asset('images/product-3.jpg') }}" alt="Classic accent chair">
-                        <h3>Classic Accent Chair</h3>
-                        <p>From {{ $productCatalog['classic-accent-chair']['listing_price'] }}</p>
+                    <a href="{{ route('product.show', ['slug' => $productCatalog['classic-accent-chair']['slug']]) }}" class="product-card" data-cursor-text="View">
+                        <img src="{{ asset($productCatalog['classic-accent-chair']['image']) }}" alt="{{ $productCatalog['classic-accent-chair']['alt'] }}">
+                        <h3>{{ $productCatalog['classic-accent-chair']['name'] }}</h3>
+                        <p class="product-snippet">{{ $productCatalog['classic-accent-chair']['short_description'] }}</p>
+                        <p class="product-price">From {{ $productCatalog['classic-accent-chair']['listing_price'] }}</p>
                     </a>
                 </div>
             </div>
@@ -239,37 +242,37 @@
             <div class="trending-product-item-boxes">
                 <article class="trending-product-item">
                     <div class="trending-product-item-image">
-                        <a href="{{ route('product.show', ['slug' => 'round-oak-table']) }}" data-cursor-text="View">
-                            <img src="{{ asset('images/trending-product-image-1.jpg') }}" alt="Minimal lounge set">
+                        <a href="{{ route('product.show', ['slug' => $productCatalog['round-oak-table']['slug']]) }}" data-cursor-text="View">
+                            <img src="{{ asset($productCatalog['round-oak-table']['image']) }}" alt="{{ $productCatalog['round-oak-table']['alt'] }}">
                         </a>
                     </div>
                     <div class="trending-product-item-content">
-                        <h3><a href="{{ route('product.show', ['slug' => 'round-oak-table']) }}">Cloud Lounge</a></h3>
-                        <p><b>KES 168,000</b></p>
+                        <h3><a href="{{ route('product.show', ['slug' => $productCatalog['round-oak-table']['slug']]) }}">{{ $productCatalog['round-oak-table']['name'] }}</a></h3>
+                        <p><b>{{ $productCatalog['round-oak-table']['listing_price'] }}</b></p>
                     </div>
                 </article>
 
                 <article class="trending-product-item">
                     <div class="trending-product-item-image">
-                        <a href="{{ route('product.show', ['slug' => 'tufted-cream-sofa']) }}" data-cursor-text="View">
-                            <img src="{{ asset('images/trending-product-image-2.jpg') }}" alt="Oak dining table">
+                        <a href="{{ route('product.show', ['slug' => $productCatalog['tufted-cream-sofa']['slug']]) }}" data-cursor-text="View">
+                            <img src="{{ asset($productCatalog['tufted-cream-sofa']['image']) }}" alt="{{ $productCatalog['tufted-cream-sofa']['alt'] }}">
                         </a>
                     </div>
                     <div class="trending-product-item-content">
-                        <h3><a href="{{ route('product.show', ['slug' => 'tufted-cream-sofa']) }}">Oak Dining</a></h3>
-                        <p><b>KES 62,500</b></p>
+                        <h3><a href="{{ route('product.show', ['slug' => $productCatalog['tufted-cream-sofa']['slug']]) }}">{{ $productCatalog['tufted-cream-sofa']['name'] }}</a></h3>
+                        <p><b>{{ $productCatalog['tufted-cream-sofa']['listing_price'] }}</b></p>
                     </div>
                 </article>
 
                 <article class="trending-product-item">
                     <div class="trending-product-item-image">
-                        <a href="{{ route('product.show', ['slug' => 'classic-accent-chair']) }}" data-cursor-text="View">
-                            <img src="{{ asset('images/trending-product-image-3.jpg') }}" alt="Accent cabinet">
+                        <a href="{{ route('product.show', ['slug' => $productCatalog['classic-accent-chair']['slug']]) }}" data-cursor-text="View">
+                            <img src="{{ asset($productCatalog['classic-accent-chair']['image']) }}" alt="{{ $productCatalog['classic-accent-chair']['alt'] }}">
                         </a>
                     </div>
                     <div class="trending-product-item-content">
-                        <h3><a href="{{ route('product.show', ['slug' => 'classic-accent-chair']) }}">Accent Cabinet</a></h3>
-                        <p><b>KES 31,000</b></p>
+                        <h3><a href="{{ route('product.show', ['slug' => $productCatalog['classic-accent-chair']['slug']]) }}">{{ $productCatalog['classic-accent-chair']['name'] }}</a></h3>
+                        <p><b>{{ $productCatalog['classic-accent-chair']['listing_price'] }}</b></p>
                     </div>
                 </article>
             </div>
@@ -366,6 +369,6 @@
             </div>
         </div>
     </section>
-@endSection
+@endsection
 
 

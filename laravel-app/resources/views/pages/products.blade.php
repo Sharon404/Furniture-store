@@ -91,60 +91,18 @@
                     </div>
 
                     <div class="row g-4">
-                        <div class="col-md-6 col-xl-4">
-                            <a href="{{ route('product.show', ['slug' => 'round-oak-table']) }}" class="product-card-link">
-                                <div class="product-card">
-                                    <img src="{{ asset('images/product-1.jpg') }}" alt="Round oak table">
-                                    <h3>Round Oak Table</h3>
-                                    <p>From {{ $productCatalog['round-oak-table']['listing_price'] }}</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-6 col-xl-4">
-                            <a href="{{ route('product.show', ['slug' => 'tufted-cream-sofa']) }}" class="product-card-link">
-                                <div class="product-card">
-                                    <img src="{{ asset('images/product-2.jpg') }}" alt="Tufted cream sofa">
-                                    <h3>Tufted Cream Sofa</h3>
-                                    <p>From {{ $productCatalog['tufted-cream-sofa']['listing_price'] }}</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-6 col-xl-4">
-                            <a href="{{ route('product.show', ['slug' => 'classic-accent-chair']) }}" class="product-card-link">
-                                <div class="product-card">
-                                    <img src="{{ asset('images/product-3.jpg') }}" alt="Classic accent chair">
-                                    <h3>Classic Accent Chair</h3>
-                                    <p>From {{ $productCatalog['classic-accent-chair']['listing_price'] }}</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-6 col-xl-4">
-                            <a href="{{ route('product.show', ['slug' => 'walnut-side-table']) }}" class="product-card-link">
-                                <div class="product-card">
-                                    <img src="{{ asset('images/product-1.jpg') }}" alt="Walnut side table">
-                                    <h3>Walnut Side Table</h3>
-                                    <p>From {{ $productCatalog['walnut-side-table']['listing_price'] }}</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-6 col-xl-4">
-                            <a href="{{ route('product.show', ['slug' => 'modern-2-seater-sofa']) }}" class="product-card-link">
-                                <div class="product-card">
-                                    <img src="{{ asset('images/product-2.jpg') }}" alt="Modern two-seater sofa">
-                                    <h3>Modern 2-Seater Sofa</h3>
-                                    <p>From {{ $productCatalog['modern-2-seater-sofa']['listing_price'] }}</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-6 col-xl-4">
-                            <a href="{{ route('product.show', ['slug' => 'vintage-lounge-chair']) }}" class="product-card-link">
-                                <div class="product-card">
-                                    <img src="{{ asset('images/product-3.jpg') }}" alt="Vintage lounge chair">
-                                    <h3>Vintage Lounge Chair</h3>
-                                    <p>From {{ $productCatalog['vintage-lounge-chair']['listing_price'] }}</p>
-                                </div>
-                            </a>
-                        </div>
+                        @foreach ($productCatalog as $product)
+                            <div class="col-md-6 col-xl-4">
+                                <a href="{{ route('product.show', ['slug' => $product['slug']]) }}" class="product-card-link">
+                                    <div class="product-card">
+                                        <img src="{{ asset($product['image']) }}" alt="{{ $product['alt'] }}">
+                                        <h3>{{ $product['name'] }}</h3>
+                                        <p class="product-snippet">{{ $product['short_description'] }}</p>
+                                        <p class="product-price">From {{ $product['listing_price'] }}</p>
+                                    </div>
+                                </a>
+                            </div>
+                        @endforeach
                     </div>
                 </div>
             </div>

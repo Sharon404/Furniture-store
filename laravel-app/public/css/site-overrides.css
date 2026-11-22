@@ -527,7 +527,15 @@ main {
     color: var(--brand-dark);
 }
 
-.product-card p {
+.product-card .product-snippet {
+    margin: 0 0 10px;
+    color: var(--brand-muted);
+    font-weight: 500;
+    font-size: 0.94rem;
+    line-height: 1.45;
+}
+
+.product-card .product-price {
     margin: 0;
     color: var(--brand-primary-dark);
     font-weight: 700;
