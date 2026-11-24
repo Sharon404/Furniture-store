@@ -3164,7 +3164,7 @@ header.main-header .container{
 
 .page-header{
 	position: relative;
-    background-image: url('../images/page-header-bg-image.jpg');
+	background-image: url('../images/page-header-banner.webp');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;

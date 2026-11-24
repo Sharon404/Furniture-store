@@ -205,7 +205,13 @@
 
     <section class="intro-video dark-section">
         <div class="intro-video-bg-video">
-            <img src="{{ asset('images/hero-bg-image.jpg') }}" alt="Luxury interior background">
+            <iframe
+                src="https://www.youtube.com/embed/aW0EF1S-x0Q?autoplay=1&mute=1&controls=0&loop=1&playlist=aW0EF1S-x0Q&modestbranding=1&rel=0&playsinline=1&vq=hd1080"
+                title="Luxury spaces background video"
+                loading="lazy"
+                allow="autoplay; encrypted-media; picture-in-picture"
+                referrerpolicy="strict-origin-when-cross-origin">
+            </iframe>
         </div>
 
         <div class="container">
