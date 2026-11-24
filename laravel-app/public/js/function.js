@@ -30,6 +30,69 @@
 			$("header.active-sticky-header .header-sticky").toggleClass("active", (fromTop > 600));
 		});
 	}	
+
+	/* Mobile Header Scroll Behavior */
+	if ($('header.main-header').length) {
+		var $mainHeader = $('header.main-header');
+		var mobileHeaderMedia = window.matchMedia('(max-width: 767.98px)');
+		var lastScrollTop = Math.max(window.pageYOffset || 0, 0);
+		var scrollDelta = 6;
+		var ticking = false;
+
+		function isMobileMenuOpen() {
+			var $mobileMenu = $('.responsive-menu .slicknav_nav');
+			return $mobileMenu.length && $mobileMenu.is(':visible') && $mobileMenu.outerHeight() > 0;
+		}
+
+		function resetMobileHeaderState() {
+			$mainHeader.removeClass('mobile-header-hidden');
+			lastScrollTop = Math.max(window.pageYOffset || 0, 0);
+		}
+
+		function updateMobileHeaderOnScroll() {
+			if (!mobileHeaderMedia.matches) {
+				resetMobileHeaderState();
+				return;
+			}
+
+			var currentTop = Math.max(window.pageYOffset || 0, 0);
+
+			if (currentTop <= 2 || isMobileMenuOpen()) {
+				$mainHeader.removeClass('mobile-header-hidden');
+				lastScrollTop = currentTop;
+				return;
+			}
+
+			if (currentTop > lastScrollTop + scrollDelta) {
+				$mainHeader.addClass('mobile-header-hidden');
+			} else if (currentTop < lastScrollTop - scrollDelta) {
+				$mainHeader.removeClass('mobile-header-hidden');
+			}
+
+			lastScrollTop = currentTop;
+		}
+
+		$window.on('scroll', function () {
+			if (!mobileHeaderMedia.matches || ticking) return;
+			ticking = true;
+			window.requestAnimationFrame(function () {
+				updateMobileHeaderOnScroll();
+				ticking = false;
+			});
+		});
+
+		$window.on('resize orientationchange', function () {
+			updateMobileHeaderOnScroll();
+		});
+
+		if (typeof mobileHeaderMedia.addEventListener === 'function') {
+			mobileHeaderMedia.addEventListener('change', updateMobileHeaderOnScroll);
+		} else if (typeof mobileHeaderMedia.addListener === 'function') {
+			mobileHeaderMedia.addListener(updateMobileHeaderOnScroll);
+		}
+
+		updateMobileHeaderOnScroll();
+	}
 	
 	/* Slick Menu JS */
 	if (typeof $.fn.slicknav === 'function' && $('#menu').length) {
