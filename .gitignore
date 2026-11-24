@@ -3,6 +3,9 @@ laravel-app/vendor/
 laravel-app/node_modules/
 laravel-app/.env
 laravel-app/.env.*
+**/.env
+**/.env.*
+!**/.env.example
 laravel-app/storage/*.key
 laravel-app/storage/app/private/
 laravel-app/storage/framework/cache/*

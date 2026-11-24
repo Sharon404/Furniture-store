@@ -1,5 +1,14 @@
 <?php
 
+use App\Http\Controllers\Admin\AuthController;
+use App\Http\Controllers\Admin\CustomerController;
+use App\Http\Controllers\Admin\DashboardController;
+use App\Http\Controllers\Admin\MarketingController;
+use App\Http\Controllers\Admin\OrderController;
+use App\Http\Controllers\Admin\ProductController;
+use App\Http\Controllers\Admin\ProfileController;
+use App\Http\Controllers\Admin\ReportController;
+use App\Http\Controllers\Admin\SettingsController;
 use Illuminate\Support\Facades\Route;
 
 $productCatalog = [
@@ -127,4 +136,57 @@ Route::view('/testimonials', 'pages.testimonials')->name('testimonials');
 Route::view('/faqs', 'pages.faqs')->name('faqs');
 
 Route::view('/404', 'pages.404')->name('404');
+
+Route::prefix('admin')->name('admin.')->group(function () {
+	Route::get('/login', [AuthController::class, 'showLogin'])->name('login');
+	Route::post('/login', [AuthController::class, 'login'])->name('login.submit');
+
+	Route::middleware(['auth', 'admin.access'])->group(function () {
+		Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
+
+		Route::redirect('/', '/admin/dashboard');
+		Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+
+		Route::prefix('products')->name('products.')->group(function () {
+			Route::get('/', [ProductController::class, 'index'])->name('index');
+			Route::get('/create', [ProductController::class, 'create'])->name('create');
+			Route::get('/edit/{sku}', [ProductController::class, 'edit'])->name('edit');
+			Route::get('/categories', [ProductController::class, 'categories'])->name('categories');
+			Route::get('/images', [ProductController::class, 'images'])->name('images');
+			Route::get('/variations', [ProductController::class, 'variations'])->name('variations');
+			Route::get('/pricing', [ProductController::class, 'pricing'])->name('pricing');
+			Route::get('/status', [ProductController::class, 'status'])->name('status');
+		});
+
+		Route::prefix('orders')->name('orders.')->group(function () {
+			Route::get('/', [OrderController::class, 'index'])->name('index');
+			Route::get('/{orderId}', [OrderController::class, 'show'])->name('show');
+		});
+
+		Route::prefix('customers')->name('customers.')->group(function () {
+			Route::get('/', [CustomerController::class, 'index'])->name('index');
+			Route::get('/{customerId}', [CustomerController::class, 'show'])->name('show');
+		});
+
+		Route::prefix('inventory')->name('inventory.')->group(function () {
+			Route::get('/', [ProductController::class, 'stock'])->name('index');
+		});
+
+		Route::prefix('discounts')->name('discounts.')->group(function () {
+			Route::get('/', [MarketingController::class, 'discounts'])->name('index');
+		});
+
+		Route::prefix('reviews')->name('reviews.')->group(function () {
+			Route::get('/', [MarketingController::class, 'reviews'])->name('index');
+		});
+
+		Route::prefix('reports')->name('reports.')->group(function () {
+			Route::get('/', [ReportController::class, 'index'])->name('index');
+		});
+
+		Route::get('/settings', [SettingsController::class, 'index'])->name('settings');
+		Route::get('/profile', [ProfileController::class, 'index'])->name('profile');
+	});
+});
+
 Route::fallback(fn () => view('pages.404'));

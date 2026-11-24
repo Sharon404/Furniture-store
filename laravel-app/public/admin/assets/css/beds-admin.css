@@ -1,0 +1,103 @@
+:root {
+    --beds-cream: #f7f2e9;
+    --beds-beige: #e5d7c4;
+    --beds-espresso: #2f2017;
+    --beds-walnut: #7a5034;
+    --beds-terracotta: #c1734a;
+    --beds-champagne: #d4b88a;
+}
+
+body {
+    background-color: var(--vz-body-bg);
+}
+
+[data-bs-theme="light"] {
+    --vz-primary: #7a5034;
+    --vz-secondary: #9d8b74;
+    --vz-success: #5f8f6d;
+    --vz-info: #4b7782;
+    --vz-warning: #c98c4a;
+    --vz-danger: #b4634a;
+    --vz-body-bg: #f7f2e9;
+    --vz-card-bg: #fffdf9;
+    --vz-body-color: #2f2017;
+    --vz-border-color: #e6d7c4;
+    --vz-topbar-user-bg: #f3e8d8;
+    --vz-vertical-menu-bg: #f2e5d3;
+    --vz-vertical-menu-item-color: #5b4030;
+    --vz-vertical-menu-item-hover-color: #2f2017;
+    --vz-vertical-menu-item-active-color: #2f2017;
+    --vz-vertical-menu-item-active-bg: #e9d5be;
+}
+
+[data-bs-theme="dark"] {
+    --vz-primary: #d4b88a;
+    --vz-secondary: #b89469;
+    --vz-success: #7dae95;
+    --vz-info: #82a3b2;
+    --vz-warning: #dba56f;
+    --vz-danger: #cf876b;
+    --vz-body-bg: #1f1814;
+    --vz-card-bg: #2a211c;
+    --vz-body-color: #f0e5d6;
+    --vz-border-color: #4b3a32;
+    --vz-topbar-user-bg: #2f241f;
+    --vz-vertical-menu-bg: #241c17;
+    --vz-vertical-menu-item-color: #cfbea8;
+    --vz-vertical-menu-item-hover-color: #f0e5d6;
+    --vz-vertical-menu-item-active-color: #f7ebdc;
+    --vz-vertical-menu-item-active-bg: #3a2d26;
+}
+
+.card,
+.table,
+.modal-content,
+.dropdown-menu,
+.form-control,
+.form-select,
+.input-group-text {
+    border-color: var(--vz-border-color);
+}
+
+.page-title-box .breadcrumb-item + .breadcrumb-item::before {
+    color: var(--vz-secondary);
+}
+
+.admin-kpi-note {
+    font-size: 0.8rem;
+    color: var(--vz-secondary-color);
+}
+
+.table thead th {
+    white-space: nowrap;
+}
+
+.navbar-brand-box .logo-lg img {
+    max-width: 180px;
+    width: auto;
+}
+
+#scrollbar {
+    height: calc(100vh - 70px);
+    max-height: calc(100vh - 70px);
+}
+
+#scrollbar .simplebar-content-wrapper,
+#scrollbar .simplebar-content {
+    min-height: 100%;
+}
+
+.navbar-menu .simplebar-content-wrapper {
+    overflow-y: auto;
+}
+
+@media (max-width: 767.98px) {
+    .page-title-box {
+        gap: 8px;
+    }
+
+    .table-responsive {
+        border: 1px solid var(--vz-border-color);
+        border-radius: 0.5rem;
+    }
+}
