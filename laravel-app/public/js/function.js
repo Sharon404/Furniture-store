@@ -100,6 +100,44 @@
 			label : '',
 			prependTo : '.responsive-menu'
 		});
+
+		var lastOutsideTouchTime = 0;
+
+		function closeSlicknavMenu() {
+			var $menuToggle = $('.slicknav_btn');
+			var $mobileMenu = $('.responsive-menu .slicknav_nav, .slicknav_nav');
+			if (!$menuToggle.length || !$mobileMenu.length) return;
+
+			var isMenuOpen = $menuToggle.hasClass('slicknav_open') || $mobileMenu.is(':visible');
+			if (isMenuOpen) {
+				$menuToggle.trigger('click');
+			}
+		}
+
+		function closeSlicknavOnOutsideInteraction(event) {
+			if (!window.matchMedia('(max-width: 767.98px)').matches) return;
+
+			if (event.type === 'touchstart') {
+				lastOutsideTouchTime = Date.now();
+			} else if (event.type === 'click' && Date.now() - lastOutsideTouchTime < 350) {
+				return;
+			}
+
+			var target = event.target;
+			if (target && target.closest && target.closest('.slicknav_menu, .navbar-toggle')) return;
+
+			var $menuToggle = $('.slicknav_btn');
+			var $mobileMenu = $('.responsive-menu .slicknav_nav, .slicknav_nav');
+			var isMenuOpen = $menuToggle.hasClass('slicknav_open') || ($mobileMenu.length && $mobileMenu.is(':visible'));
+
+			if (isMenuOpen) {
+				closeSlicknavMenu();
+			}
+		}
+
+		$(document)
+			.off('touchstart.slicknavOutside click.slicknavOutside')
+			.on('touchstart.slicknavOutside click.slicknavOutside', closeSlicknavOnOutsideInteraction);
 	}
 
 	if($("a[href='#top']").length){
