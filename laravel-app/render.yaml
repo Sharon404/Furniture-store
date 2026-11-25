@@ -22,7 +22,9 @@ services:
       - key: LOG_CHANNEL
         value: stderr
       - key: RUN_MIGRATIONS
-        value: "false"
+        value: "true"
+      - key: RUN_SEEDERS
+        value: "true"
       - key: SESSION_DRIVER
         value: file
       - key: CACHE_STORE
@@ -34,14 +36,14 @@ services:
       - key: FILESYSTEM_DISK
         value: local
       - key: DB_CONNECTION
-        value: mysql
-      - key: DB_HOST
+        value: pgsql
+      - key: DB_URL
         sync: false
-      - key: DB_PORT
-        value: "3306"
-      - key: DB_DATABASE
+      - key: ADMIN_EMAILS
         sync: false
-      - key: DB_USERNAME
+      - key: ADMIN_BOOTSTRAP_NAME
+        value: Admin
+      - key: ADMIN_BOOTSTRAP_EMAIL
         sync: false
-      - key: DB_PASSWORD
+      - key: ADMIN_BOOTSTRAP_PASSWORD
         sync: false
