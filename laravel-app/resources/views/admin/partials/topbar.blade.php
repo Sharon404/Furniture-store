@@ -2,25 +2,6 @@
     <div class="layout-width">
         <div class="navbar-header">
             <div class="d-flex">
-                <div class="navbar-brand-box horizontal-logo">
-                    <a href="{{ route('admin.dashboard') }}" class="logo logo-dark">
-                        <span class="logo-sm">
-                            <img src="{{ asset('images/branding/icon-brown.svg') }}" alt="BEDS icon" height="28">
-                        </span>
-                        <span class="logo-lg">
-                            <img src="{{ asset('images/branding/logo-primary.svg') }}" alt="BEDS - TREND FURNITURE" height="26">
-                        </span>
-                    </a>
-                    <a href="{{ route('admin.dashboard') }}" class="logo logo-light">
-                        <span class="logo-sm">
-                            <img src="{{ asset('images/branding/icon-brown.svg') }}" alt="BEDS icon" height="28">
-                        </span>
-                        <span class="logo-lg">
-                            <img src="{{ asset('images/branding/logo-secondary-dark-bg.svg') }}" alt="BEDS - TREND FURNITURE" height="26">
-                        </span>
-                    </a>
-                </div>
-
                 <button type="button" class="btn btn-sm px-3 fs-16 header-item vertical-menu-btn topnav-hamburger" id="topnav-hamburger-icon">
                     <span class="hamburger-icon">
                         <span></span>

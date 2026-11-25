@@ -77,6 +77,64 @@ body {
     width: auto;
 }
 
+.navbar-brand-box {
+    min-height: 86px;
+    overflow: visible;
+    padding-right: 44px;
+}
+
+.navbar-brand-box .logo {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.navbar-brand-box .logo-sm img {
+    height: 28px !important;
+    width: auto !important;
+    max-width: 140px;
+}
+
+.navbar-brand-box .logo-lg img {
+    width: 170px !important;
+    height: auto !important;
+    max-width: 170px;
+    object-fit: contain;
+    object-position: center;
+}
+
+html[data-sidebar-size="sm"] .navbar-menu .navbar-brand-box .logo-sm img {
+    height: 34px !important;
+    width: auto !important;
+    max-width: 180px;
+}
+
+@media (min-width: 992px) {
+    .navbar-brand-box {
+        min-height: 92px;
+    }
+
+    .navbar-brand-box .logo-sm img {
+        height: 30px !important;
+        width: auto !important;
+        max-width: 150px;
+    }
+
+    .navbar-brand-box .logo-lg img {
+        width: 176px !important;
+        height: auto !important;
+        max-width: 176px;
+        object-fit: contain;
+        object-position: center;
+    }
+
+    html[data-sidebar-size="sm"] .navbar-menu .navbar-brand-box .logo-sm img {
+        height: 34px !important;
+        width: auto !important;
+        max-width: 170px;
+    }
+}
+
 #scrollbar {
     height: calc(100vh - 70px);
     max-height: calc(100vh - 70px);
@@ -91,7 +149,30 @@ body {
     overflow-y: auto;
 }
 
+.admin-login-logo {
+    width: min(260px, 78vw);
+    height: auto;
+    display: inline-block;
+}
+
+@media (max-width: 575.98px) {
+    .admin-login-logo {
+        width: min(220px, 84vw);
+    }
+}
+
 @media (max-width: 767.98px) {
+    .navbar-brand-box .logo-sm img {
+        height: 28px !important;
+        width: auto !important;
+        max-width: 160px;
+    }
+
+    .navbar-brand-box .logo-lg img {
+        height: 28px !important;
+        max-width: 180px;
+    }
+
     .page-title-box {
         gap: 8px;
     }

@@ -1,12 +1,12 @@
 <div class="app-menu navbar-menu">
     <div class="navbar-brand-box">
         <a href="{{ route('admin.dashboard') }}" class="logo logo-dark">
-            <span class="logo-sm"><img src="{{ asset('images/branding/icon-brown.svg') }}" alt="BEDS" height="28"></span>
-            <span class="logo-lg"><img src="{{ asset('images/branding/logo-primary.svg') }}" alt="BEDS" height="24"></span>
+            <span class="logo-sm"><img src="{{ asset('images/branding/logo-primary-cropped.png') }}" alt="BEDS - TREND FURNITURE"></span>
+            <span class="logo-lg"><img src="{{ asset('images/branding/logo-primary-cropped.png') }}" alt="BEDS - TREND FURNITURE"></span>
         </a>
         <a href="{{ route('admin.dashboard') }}" class="logo logo-light">
-            <span class="logo-sm"><img src="{{ asset('images/branding/icon-brown.svg') }}" alt="BEDS" height="28"></span>
-            <span class="logo-lg"><img src="{{ asset('images/branding/logo-secondary-dark-bg.svg') }}" alt="BEDS" height="24"></span>
+            <span class="logo-sm"><img src="{{ asset('images/branding/logo-primary-cropped.png') }}" alt="BEDS - TREND FURNITURE"></span>
+            <span class="logo-lg"><img src="{{ asset('images/branding/logo-primary-cropped.png') }}" alt="BEDS - TREND FURNITURE"></span>
         </a>
         <button type="button" class="btn btn-sm p-0 fs-20 header-item float-end btn-vertical-sm-hover" id="vertical-hover">
             <i class="ri-record-circle-line"></i>

@@ -20,7 +20,7 @@
                     <div class="card mt-4">
                         <div class="card-body p-4">
                             <div class="text-center mt-2">
-                                <img src="{{ asset('images/branding/logo-primary.svg') }}" alt="BEDS - TREND FURNITURE" height="34" class="mb-3">
+                                <img src="{{ asset('images/branding/logo-primary-cropped.png') }}" alt="BEDS - TREND FURNITURE" class="mb-3 admin-login-logo">
                                 <h5 class="text-primary">Admin Portal</h5>
                                 <p class="text-muted">Sign in to manage inventory, orders, and store operations.</p>
                             </div>

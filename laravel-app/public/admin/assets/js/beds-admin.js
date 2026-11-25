@@ -63,6 +63,11 @@
     var initialTheme = localStorage.getItem('beds_admin_theme') || root.getAttribute('data-bs-theme') || 'light';
     applyTheme(initialTheme);
 
+    if (window.innerWidth >= 1024) {
+        root.setAttribute('data-sidebar-size', 'lg');
+        sessionStorage.setItem('data-sidebar-size', 'lg');
+    }
+
     if (toggleButton) {
         toggleButton.addEventListener('click', function () {
             var current = root.getAttribute('data-bs-theme') || 'light';
